@@ -4,9 +4,10 @@ O portfólio tem como objetivo documentar todos os API's (Aprendizagem por Proje
 
 ## Sumário
 [Sobre mim](#sobre-mim)
-<hr></hr>
-## Sobre mim
 
+<hr></hr>
+
+## Sobre mim
 <p align="center"><img src= "Images/fotominha.png" width="420" height="300"></p>
 
 Me chamo Lucas Emanoel Teixeira Engracio da Silva, tenho 20 anos. Sou técnico em Desenvolvimento de Sistemas pela Etec Profa.
