@@ -26,7 +26,7 @@ Atualmente sou Analista de Testes na empresa Saipher ATC, que tem como ramo de a
 ## Meus Projetos
 ### Mó Viagem
 ##### 1° Semestre • 2022-1
-Parceiro Acadêmico: <a href="https://fatecsjc-prd.azurewebsites.net/">Faculdade de Tecnologia de São José dos Campos</a>
-
+<p>Parceiro Acadêmico: <a href="https://fatecsjc-prd.azurewebsites.net/">Faculdade de Tecnologia de São José dos Campos</a></p>
+<img src= "Images/fatec.jpg" width="450" height="250">
 
 
