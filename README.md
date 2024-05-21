@@ -41,9 +41,20 @@ São José dos Campos.</p>
 * __Requests:__ Biblioteca do Python para fazer requisições HTTP de forma simplificada;
 * __Translator:__ Biblioteca que traduz textos para diferentes idiomas;
 * __Holidays:__ Biblioteca que fornece informações sobre feriados em diversos países;
-* __Re:__ Biblioteca do Python que permite pesquisar e manipular ;
+* __Re:__ Biblioteca do Python que permite pesquisar e manipular texto usando expressões regulares;
 * __Webbrowser:__ Biblioteca do Python que permite abrir de maneira fácil URLs em navegadores da web padrão do sistema.
 <br><br>  
 
 ## Contribuições Pessoais 
+### Transformação de texto para voz
+<p></p>
+<br>
 
+### Leitura de arquivo Excel
+### Reconhecimento de voz
+### Utilização de API para obter previsão do tempo
+
+<hr></hr>
+<br><br>
+
+## Aprendizados
