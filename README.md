@@ -47,7 +47,12 @@ São José dos Campos.</p>
 
 ## Contribuições Pessoais 
 ### Transformação de texto para voz
-<p></p>
+<p>Para que a aplicação consiga se comunicar por voz com o usuário, é necessário que a aplicação tenha a capacidade de tranformar texto em voz por meio de algumas tecnologias específicas.</p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+  <p> Como a aplicação se trata de uma assistente virtual, se espera que a mesma se comunique com o usuário por meio de voz, para que o usuário tenha uma experiência mais lúdica e de fácil compreensão.</p>
+</details>
+
 <br>
 
 ### Leitura de arquivo Excel
