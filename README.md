@@ -48,7 +48,8 @@ São José dos Campos.</p>
 
 ## Contribuições Pessoais 
 ### Transformação de texto para voz
-<p>Para que a aplicação consiga se comunicar por voz com o usuário, é necessário que a aplicação tenha a capacidade de tranformar texto em voz por meio de algumas tecnologias específicas.</p>
+<p>Para permitir a comunicação por voz com o usuário, a aplicação deve ser capaz de transformar texto em voz usando tecnologias específicas. Isso implica a integração de sistemas de síntese de voz que convertem o texto fornecido pela aplicação em uma saída de áudio natural e compreensível.
+Essas tecnologias facilitam a interação entre o usuário e a aplicação, permitindo que o usuário ouça informações, respostas e instruções fornecidas pela aplicação de forma clara e concisa. Essa capacidade de comunicação por voz torna a interação com a aplicação mais intuitiva e acessível, além de oferecer uma experiência mais envolvente e dinâmica para o usuário.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
   <p> Como a aplicação se trata de uma assistente virtual, se espera que a mesma se comunique com o usuário por meio de voz, para que o usuário tenha uma experiência lúdica e de fácil compreensão. Por meio da biblioteca Pyttsx3 do Python, é possível tranformar textos em voz. Sua lógica é bem simples, deve ser iniciado o mecanismo de síntese de voz, depois deve ser passado o texto que deve ser tranformado em voz e por fim o programa aguarda até que todo o texto tenha sido falado antes de prossegir.</p>
@@ -64,7 +65,68 @@ São José dos Campos.</p>
 <br>
 
 ### Leitura de arquivo Excel
-### Reconhecimento de voz
+<p>A assistente virtual oferece uma funcionalidade de busca de agências de viagem por categorias, visando facilitar a escolha e compra de pacotes turísticos. Com base em suas preferências, como gastronomia, opções para toda a família, ecoturismo ou parques temáticos, a assistente apresenta uma seleção de agências relevantes.
+Cada opção inclui o nome da agência, um breve descritivo sobre seus serviços e uma ligação direta para acessar a página inicial da agência, onde você pode explorar mais detalhes e planejar sua viagem com facilidade.
+Essa função visa proporcionar uma experiência mais personalizada e conveniente, ajudando o usuário a encontrar agências que correspondam aos seus interesses específicos e tornando o processo de reserva de viagens mais intuitivo e agradável.</p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+  <p>Para que seja possível mostrar as agências para o usuário, é preciso criar um arquivo no Excel para armazenar estes dados. O Python possui uma biblioteca chamada Pandas, com 
+  ela é possível realizar a manipulação, leitura e análise de dados, sendo uma ferramenta poderosa. A aplicação utiliza esta ferramenta para ler um arquivo Excel que possui 
+  informações de agências de viagem de diferentes categorias e exibe para o usuário.</p>
+  
+```python
+  elif "pesquisar agências" in texto:
+      convertFala("Qual tipo de viagem você prefere")
+      print("1- Ecoturismo")
+      print("2- Para toda família")
+      print("3- Gastronômico")
+      print("4- Parques temáticos")
+
+      col_names =['gastronomico', 'descricaog', 'urlg', 'aventura', 'descricaoa', 'urla', 'familia', 'descricaof', 'urlf', 'parque', 'descricaop', 'urlp']
+      tabela = pd.read_excel('api.xlsx', names = col_names)
+
+      rec = sr.Recognizer()
+
+      with sr.Microphone() as mic:
+          print("Escolha um para prosseguir")
+          rec.adjust_for_ambient_noise(mic)
+          audio = rec.listen(mic)
+      opcao = rec.recognize_google(audio, language="pt-BR")
+
+      if "ecoturismo" in opcao:
+          convertFala("Essas são as opções de viagens de Ecoturismo")
+          eco = tabela['aventura'][:]
+          print(eco)
+          print("\n")
+          convertFala("Caso tenha se interessado em alguma agência, clique no link para ser redirecionado para o site")
+          eco2 = tabela['urla'][:]
+          print(eco2)
+
+          convertFala("Quer ver a descrição das agências")
+
+          rec = sr.Recognizer()
+
+          with sr.Microphone() as mic:
+              print("Escolha um para prosseguir")
+              rec.adjust_for_ambient_noise(mic)
+              audio = rec.listen(mic)
+          escolha = rec.recognize_google(audio, language="pt-BR")
+
+          if "sim" in escolha:
+              convertFala("Aqui está")
+              desc = tabela['descricaoa']
+              print(desc)
+
+          elif "não" in escolha:
+              convertFala("Tudo bem")
+
+          else:
+              convertFala("Não entendi")
+```
+</details>
+<br>
+
+### Lista de Desejos
 ### Utilização de API para obter previsão do tempo
 
 <hr></hr>
