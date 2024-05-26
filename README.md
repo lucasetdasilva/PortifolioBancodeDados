@@ -42,7 +42,8 @@ São José dos Campos.</p>
 * __Translator:__ Biblioteca que traduz textos para diferentes idiomas;
 * __Holidays:__ Biblioteca que fornece informações sobre feriados em diversos países;
 * __Re:__ Biblioteca do Python que permite pesquisar e manipular texto usando expressões regulares;
-* __Webbrowser:__ Biblioteca do Python que permite abrir de maneira fácil URLs em navegadores da web padrão do sistema.
+* __Webbrowser:__ Biblioteca do Python que permite abrir de maneira fácil URLs em navegadores da web padrão do sistema;
+* __Pyttsx3__:.
 <br><br>  
 
 ## Contribuições Pessoais 
@@ -50,9 +51,16 @@ São José dos Campos.</p>
 <p>Para que a aplicação consiga se comunicar por voz com o usuário, é necessário que a aplicação tenha a capacidade de tranformar texto em voz por meio de algumas tecnologias específicas.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-  <p> Como a aplicação se trata de uma assistente virtual, se espera que a mesma se comunique com o usuário por meio de voz, para que o usuário tenha uma experiência mais lúdica e de fácil compreensão.</p>
+  <p> Como a aplicação se trata de uma assistente virtual, se espera que a mesma se comunique com o usuário por meio de voz, para que o usuário tenha uma experiência lúdica e de fácil compreensão. Por meio da biblioteca Pyttsx3 do Python, é possível tranformar textos em voz. Sua lógica é bem simples, deve ser iniciado o mecanismo de síntese de voz, depois deve ser passado o texto que deve ser tranformado em voz e por fim o programa aguarda até que todo o texto tenha sido falado antes de prossegir.</p>
+  <p>Abaixo é mostrado uma aplicação simples de como funciona a tranformação de texto para voz:</p>
+  
+  ```python
+  def convertFala(texto):
+  engine = pyttsx3.init()
+  engine.say(texto)
+  engine.runAndWait()
+  ```
 </details>
-
 <br>
 
 ### Leitura de arquivo Excel
