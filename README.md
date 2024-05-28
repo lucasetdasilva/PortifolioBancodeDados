@@ -127,8 +127,14 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 <br>
 
 ### Lista de Desejos
-### Utilização de API para obter previsão do tempo
+<p>Esta funcionalidade permite ao usuário armazenar informações sobre locais que deseja visitar, incluindo o nome do município, estado e seus principais pontos turísticos. Esses detalhes são salvos em um arquivo .txt, possibilitando que o usuário acesse sua lista de desejos e planeje um roteiro personalizado com base em suas preferências registradas.</p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+</details>
+<br>
 
+### Utilização de API para obter previsão do tempo
+<p>Esta funcionalidade consiste em </p>
 <hr></hr>
 <br><br>
 
