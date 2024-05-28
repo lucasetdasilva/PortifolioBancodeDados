@@ -70,9 +70,9 @@ Cada opção inclui o nome da agência, um breve descritivo sobre seus serviços
 Essa função visa proporcionar uma experiência mais personalizada e conveniente, ajudando o usuário a encontrar agências que correspondam aos seus interesses específicos e tornando o processo de reserva de viagens mais intuitivo e agradável.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-  <p>Para que seja possível mostrar as agências para o usuário, é preciso criar um arquivo no Excel para armazenar estes dados. O Python possui uma biblioteca chamada Pandas, com 
-  ela é possível realizar a manipulação, leitura e análise de dados, sendo uma ferramenta poderosa. A aplicação utiliza esta ferramenta para ler um arquivo Excel que possui 
+  <p>Para que seja possível mostrar as agências para o usuário, é preciso criar um arquivo no Excel para armazenar estes dados. O Python possui uma biblioteca chamada Pandas, em que é possível realizar a manipulação, leitura e análise de dados, sendo uma ferramenta poderosa. A aplicação utiliza esta ferramenta para ler um arquivo Excel que possui 
   informações de agências de viagem de diferentes categorias e exibe para o usuário.</p>
+  <p>Abaixo é mostrado um exemplo que foi utilizado a leitura de um arquivo Excel:</p>
   
 ```python
   elif "pesquisar agências" in texto:
