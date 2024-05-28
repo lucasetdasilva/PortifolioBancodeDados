@@ -130,6 +130,7 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 <p>Esta funcionalidade permite ao usuário armazenar informações sobre locais que deseja visitar, incluindo o nome do município, estado e seus principais pontos turísticos. Esses detalhes são salvos em um arquivo .txt, possibilitando que o usuário acesse sua lista de desejos e planeje um roteiro personalizado com base em suas preferências registradas.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
+  <p>A lista de desejos é feita por meio da criação de um arquivo .txt, sendo que a própria aplicação cria este arquivo. Após a criação do mesmo, a aplicação pede algumas informações sobre o local que ele deseja visitar </p>
 </details>
 <br>
 
