@@ -127,15 +127,99 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 <br>
 
 ### Lista de Desejos
-<p>Esta funcionalidade permite ao usuário armazenar informações sobre locais que deseja visitar, incluindo o nome do município, estado e seus principais pontos turísticos. Esses detalhes são salvos em um arquivo .txt, possibilitando que o usuário acesse sua lista de desejos e planeje um roteiro personalizado com base em suas preferências registradas.</p>
+<p>Esta funcionalidade permite que o usuário armazene informações sobre locais que deseja visitar, incluindo o nome do município, estado e seus principais pontos turísticos. Essas informações são salvas em um arquivo .txt, possibilitando que o usuário acesse sua lista de desejos e planeje um roteiro personalizado com base em suas preferências registradas.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-  <p>A lista de desejos é feita por meio da criação de um arquivo .txt, sendo que a própria aplicação cria este arquivo. Após a criação do mesmo, a aplicação pede algumas informações sobre o local que ele deseja visitar </p>
+  <p>A lista de desejos é feita por meio da criação de um arquivo .txt, sendo que a própria aplicação cria e atualiza este arquivo. Após a criação do mesmo, a aplicação pede algumas informações sobre o local que ele deseja visitar. O usuário fala as informações, a aplicação converte a fala em texto e armazena as informações dentro do arquivo. De um ponto de vista mais técnico, é necessário que a aplicação crie um arquivo .txt, em seguida a aplicação pergunta ao usuário que ação ele deseja realizar na lista de desejos, visualizar a lista de desejos ou adicionar um novo destino. Caso o usuário opte por visualizar a lista desejos, a aplicação lê o arquivo .txt e mostra na tela as informações dos destinos, além de responder por voz também. Se o usuário optar por adicionar um novo destino, a aplicação irá dizer para o usuário falar sobre o local desejado, em seguida a aplicação abre a edição do arquivo .txt e armazena as informações que foram ditas pelo o usuário. Para deletar ou editar alguma informação da lista de desejos, é necessário que o usuário abra o arquivo e realize as ações que deseja executar.</p>
+  <p>Abaixo é mostrado como a lista de desejos é realizada na aplicação:</p>
+  
+  ```python
+    elif "desejo" in texto:
+            convertFala("Você deseja visualizar a lista ou adicionar")
+            print("\n")
+            print("1- Visualizar")
+            print("2- Adicionar")
+            print("\n")
+
+            rec = sr.Recognizer()
+
+            with sr.Microphone() as mic:
+                print("Escolha uma opção: ")
+                rec.adjust_for_ambient_noise(mic)
+                audio = rec.listen(mic)
+
+            resposta = rec.recognize_google(audio, language="pt-BR")
+
+            if ("visualizar" in resposta):
+                arquivo = open('lista.txt', 'r')
+                print("----Lista de Desejos----")
+
+                for linha in arquivo:
+                    print(linha.rstrip())
+                    convertFala(linha.rstrip())
+
+                print("Para retirar um destino da lista, vá até o arquivo lista.txt e elimine o que desejar")
+                convertFala("Para retirar ou alterar um destino da lista, vá até o arquivo lista.txt e elimine ou altere o que desejar")
+                arquivo.close()
+
+            elif ("adicionar" in resposta):
+                from classe import listadesejo
+                arquivos.append(listadesejo())
+                arquivo = open('lista.txt', 'a')
+
+                convertFala("Qual cidade você deseja visitar")
+                rec = sr.Recognizer()
+
+                with sr.Microphone() as mic:
+                    print("Qual o nome da cidade: ")
+                    rec.adjust_for_ambient_noise(mic)
+                    audio = rec.listen(mic)
+
+                nomecidade = rec.recognize_google(audio, language="pt-BR")
+
+                arquivos[contador].setnomecidade(nomecidade)
+
+                convertFala("Qual o nome do estado brasileiro")
+                rec2 = sr.Recognizer()
+
+                with sr.Microphone() as mic:
+                    print("Qual o nome do estado: ")
+                    rec2.adjust_for_ambient_noise(mic)
+                    audio = rec2.listen(mic)
+
+                estado = rec2.recognize_google(audio, language="pt-BR")
+
+                arquivos[contador].setestado(estado)
+
+                convertFala("Quais são os pontos turísticos")
+                rec3 = sr.Recognizer()
+
+                with sr.Microphone() as mic:
+                    print("Quais os pontos turísticos: ")
+                    rec3.adjust_for_ambient_noise(mic)
+                    audio = rec3.listen(mic)
+
+                ponto = rec3.recognize_google(audio, language="pt-BR")
+
+                arquivos[contador].setponto(ponto)
+
+                arquivo.write("--------------------" + "\n")
+                arquivo.write("Nome da Cidade:" + arquivos[contador].getnomecidade() + "\n")
+                arquivo.write("Nome do Estado:" + arquivos[contador].getestado() + "\n")
+                arquivo.write("Pontos Turísticos:" + arquivos[contador].getponto() + "\n")
+                arquivo.write("--------------------" + "\n")
+                arquivo.close()
+
+                print("Destino adicionado com sucesso")
+                convertFala("Destino adicionado com sucesso")
+            else:
+                convertFala("Não entendi, poderia repetir")
+  ```
 </details>
 <br>
 
 ### Utilização de API para obter previsão do tempo
-<p>Esta funcionalidade consiste em </p>
+<p> </p>
 <hr></hr>
 <br><br>
 
