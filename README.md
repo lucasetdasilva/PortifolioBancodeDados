@@ -43,7 +43,7 @@ São José dos Campos.</p>
 * __Holidays:__ Biblioteca que fornece informações sobre feriados em diversos países;
 * __Re:__ Biblioteca do Python que permite pesquisar e manipular texto usando expressões regulares;
 * __Webbrowser:__ Biblioteca do Python que permite abrir de maneira fácil URLs em navegadores da web padrão do sistema;
-* __Pyttsx3__:.
+* __Pyttsx3__: Biblioteca do Python que fornece uma interface para síntese de voz.
 <br><br>  
 
 ## Contribuições Pessoais 
