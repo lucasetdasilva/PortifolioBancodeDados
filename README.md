@@ -219,7 +219,47 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 <br>
 
 ### Utilização de API para obter previsão do tempo
-<p> </p>
+<p>A aplicação oferece uma funcionalidade integrada que permite aos usuários acessar e visualizar dados meteorológicos de qualquer localidade do mundo por meio do serviço oferecido pelo site OpenWeather. Essa função é essencial para os usuários planejarem suas viagens com mais eficiência e conforto.  Com acesso à previsão do tempo, é possível saber se o lugar estará quente, frio ou com um clima agradável durante a estadia planejada. Essas informações ajudam os usuários a se prepararem adequadamente, levando em consideração as condições meteorológicas esperadas.</p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+  <p>Para que seja possível obter os dados metereológicos de um determinado local, a aplicação deve ter uma integração com o OpenWeather, que se trata de um site que possui dados metereológicos de todo o mundo. Este site disponibiliza uma API (Interface de Programação de Aplicações) para que os desenvolvedores possam obter informações metereológicas e apliquem em seus projetos. No caso do projeto desenvolvido, o usuário fala qual cidade ele deseja saber a previsão do tempo, a aplicação faz uma requisição utilizando a API juntamente com o nome da cidade para obter os dados metereológicos. Como resposta, o OpenWeather retorna a temperatura do local em tempo real na escala de temperatura Kelvin, ou seja, antes da aplicação exibir e dizer a temperatura para o usuário, é necessário fazer uma conversão para Celsius. Após a conversão, a aplicação fala e exibe a temperatura e a condição metereológica do local (ensolarado, nublado etc). Por fim, dependendo da temperatura, a aplicação dá dicas de como se preparar para o clima da cidade.</p>
+  <p>Abaixo é apresentado a utilização da API para obter os dados metereológicos:</p>
+
+  ```python
+    if "previsão do tempo" in texto:
+            convertFala("Para onde você pretende ir")
+            api = "a143cba82f2ee6901732e51ece9014df"
+            rec = sr.Recognizer()
+            
+            with sr.Microphone() as mic:
+                print("ouvindo")
+                rec.adjust_for_ambient_noise(mic)
+                audio = rec.listen(mic)
+            
+            cidade = rec.recognize_google(audio, language="pt-BR")
+            
+            url = f"https://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={api}"
+            req = requests.get(url)
+            requisicao_dic = req.json()
+            tempo = requisicao_dic['weather'][0]['description']
+            temperatura = requisicao_dic['main']['temp']
+            converter = (temperatura - 273.15) // 1
+            clima = tradutor(tempo)
+            convertFala(f"Em {cidade} faz agora {converter} graus Celsius")
+            convertFala(f"A condição climática é {clima}")
+            print(f"Temperatura agora em {cidade} é {converter} °C")
+            print(f"Condição climática agora em {cidade} é {clima}")
+
+            if (converter >= 28):
+                convertFala("Passe um filtro solar e beba bastante água, hoje será um dia quente")
+
+            elif (converter <= 15):
+                convertFala("Melhor se agasalhar, hoje o dia vai estar frio")
+
+            elif (converter >= 16 and converter <= 27):
+                convertFala("Hoje o clima estará agradável, aproveite")
+  ```
+</details>  
 <hr></hr>
 <br><br>
 
