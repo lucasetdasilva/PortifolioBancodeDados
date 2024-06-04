@@ -264,3 +264,17 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 <br><br>
 
 ## Aprendizados
+<p>Durante o projeto de API, atuei como Scrum Master, auxiliando meus colegas no desenvolvimento de suas atividades, além de atuar como um facilitador, tirando impedimentos que podem atrasar os prazos das atividades. Pude entender e aplicar fundamentos básicos do Scrum que ajudaram a equipe a se comprometer com o projeto e entregar um projeto simples e de qualidade.</p>
+<p>Também atuei como desenvolvedor, elaborando e construindo implementações do projeto. Pude aumentar o meu conhecimento na linguagem Python e utilizá-la para diferentes propósitos. Além de compreender como funciona a lógica de programação, conceitos de repetição, conceitos de condicionais entre outros paradigmas da programação.</p>
+
+### - Hard Skills:
+* Conhecimento e aprofundamento de lógica de programação na linguaguem Python
+* Desenvolvimento de API para obtenção de recursos
+* Compreensão na manipulação de dicionários
+* Desenvolvimento de aplicação que compreende a fala humana e pode se comunicar com o usuário por voz
+
+### - Soft Skills:
+* Empatia
+* Colobaração
+* Autonomia
+* Proatividade
