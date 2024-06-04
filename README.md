@@ -283,3 +283,4 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 ### PRO4JOBS
 ##### 2° Semestre • 2022-2
 <p>Parceiro Acadêmico: <a href="https://www.pro4tech.com.br/">PRO4TECH</a></p>
+<img src= "2Semestre/logo2sem.png" width="475" height="150">
