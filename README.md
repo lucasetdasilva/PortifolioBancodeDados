@@ -278,3 +278,8 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 * Colobaração
 * Autonomia
 * Proatividade
+<hr></hr>
+
+### PRO4JOBS
+##### 2° Semestre • 2022-2
+<p>Parceiro Acadêmico: <a href="https://www.pro4tech.com.br/">PRO4TECH</a></p>
