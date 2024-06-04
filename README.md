@@ -289,6 +289,16 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 ## Tecnologias Utilizadas
 
 * __Java:__ Linguagem de programação back-end;
-* __Java Swing:__;
-* __MySQL:__;
-* 
+* __Java Swing:__ Conjunto de bibliotecas da linguagem Java, utilizado para construção de interfaces gráficas de usuário (GUIs);
+* __MySQL:__ Sistema Gerenciador de Banco de Dados utilizado para armazenar os dados provenientes da aplicação desenvolvida.
+<br><br>
+
+## Contribuições Pessoais
+### Contribuição 1
+### Contribuição 2
+### Contribuição 3
+### Contribuição 4
+<hr></hr>
+<br><br>
+
+## Aprendizados
