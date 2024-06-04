@@ -280,7 +280,15 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 * Proatividade
 <hr></hr>
 
-### PRO4JOBS
+### PRO4Jobs
 ##### 2° Semestre • 2022-2
 <p>Parceiro Acadêmico: <a href="https://www.pro4tech.com.br/">PRO4TECH</a></p>
-<img src= "2Semestre/logo2sem.png" width="475" height="150">
+<img src= "2Semestre/logo2sem.png" width="250" height="250">
+<p>PRO4Jobs é uma aplicação desenvolvida para desktop e tem como principal intuito ajudar no controle e gerenciamento de vagas de emprego. O candidato realiza sua autenticação e pode encontrar, analisar e se canditar a vagas de emprego que possui interesse. Por outro lado, o RH consegue analisar os currículos dos candidatos para uma determinada vaga, além de poder aprovar ou reprovar os mesmos. </p>
+
+## Tecnologias Utilizadas
+
+* __Java:__ Linguagem de programação back-end;
+* __Java Swing:__;
+* __MySQL:__;
+* 
