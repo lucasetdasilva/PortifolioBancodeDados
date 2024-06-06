@@ -294,7 +294,7 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 <br><br>
 
 ## Contribuições Pessoais
-### Contribuição 1
+### Visualizar vagas de emprego
 ### Contribuição 2
 ### Contribuição 3
 ### Contribuição 4
