@@ -343,8 +343,34 @@ A classe que contém o método de cadastro de vagas no banco então coleta os da
 <br>
 
 ### Criação de Banco de Dados
-### Cadastro de Vagas de Emprego
-### 
+<p>Como a aplicação possui dados que não podem ser perdidos, foi necessário a construção de um banco de dados relacional. O banco de dados relacional consiste no armazenamento de dados em estruturas que se chamam tabelas, cada tabela deve possuir um identificador único (chave primária), que se trata de um valor que não pode se repetir mais de uma vez, e suas respectivas colunas. Além disso, as tabelas podem ter ligações entre si, e com base nessas relações pode ser necessário a criação de novas tabelas ou a adição de chaves estrangeiras.</p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+  <p>Para a criação de um banco de dados relacional, foi preciso escolher um SGBD (Sistema Gerenciador de Banco de Dados) que melhor se encaixesse no projeto que foi desenvolvido. O SGBD escolhido foi o MySQL, por se tratar de uma ferramenta simples e fácil de implementar. Após a escolha do SGBD, foi observado a modelagem de dados criada do projeto, porque com ela é criado o script do banco de dados. Em seguida, foi preciso criar um database, onde foi armazenado o banco de dados, depois foram criadas as tabelas e suas respectivas relações. O comando para criar tabelas no MySQL é o "CREATE TABLE", cada coluna deve ter seu nome e o seu tipo de dado que deve ser armazenado (inteiro, texto etc), além de uma chave primária e chave estrangeira (dependendo da relação da tabela com as outras).</p>
+  <p>Abaixo é mostrado a criação de uma tabela no banco de dados do projeto:</p>
+
+  ```sql
+      create database banco;
+      use banco;
+
+      create table candidato(
+          cpf varchar(14) not null,
+          nome_completo varchar(50) not null,
+          data_nascimento date not null,
+          email varchar(30) not null,
+          telefone bigint not null,
+          endereco varchar(60) null,
+          pretencao_salarial numeric(7,2) null,
+          arquivo blob null,
+          senha varchar(3000) not null,
+          primary key (cpf)
+    );
+  ```
+</details>
+<br>
+
+### Progresso do Candidato
+### Login do RH
 <hr></hr>
 <br><br>
 
@@ -356,3 +382,8 @@ A classe que contém o método de cadastro de vagas no banco então coleta os da
 ### - Soft Skills:
 
 <hr></hr>
+
+### Predial
+##### 4° Semestre • 2023-2
+<p>Parceiro Acadêmico: <a href="https://www.jaia.software/">Jaia Software</a></p>
+<p align = "center"><img src= "" width="250" height="250"></p>
