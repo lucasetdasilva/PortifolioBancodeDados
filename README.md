@@ -27,7 +27,7 @@ São José dos Campos.</p>
 ### Mó Viagem
 ##### 1° Semestre • 2022-1
 <p>Parceiro Acadêmico: <a href="https://fatecsjc-prd.azurewebsites.net/">Faculdade de Tecnologia de São José dos Campos</a></p>
-<img src= "Images/logo.png" width="300" height="300">
+<p align = "center"><img src= "Images/logo.png" width="300" height="300"></p>
 <p>A aplicação Mó Viagem é uma assistente virtual de viagens, que tem como objetivo auxiliar o planejamento de viagens futuras. O usuário pode pedir informações, pontos turísticos, curiosidades e deixar registrado quais os próximos destinos ele quer conhecer entre outras funcionalidades. É possível também perguntar a previsão do tempo para cada destino.</p>
 
 ## Tecnologias Utilizadas
@@ -283,7 +283,7 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 ### PRO4Jobs
 ##### 2° Semestre • 2022-2
 <p>Parceiro Acadêmico: <a href="https://www.pro4tech.com.br/">PRO4TECH</a></p>
-<img src= "2Semestre/logo2sem.png" width="250" height="250">
+<p align = "center"><img src= "2Semestre/logo2sem.png" width="250" height="250"></p>
 <p>PRO4Jobs é uma aplicação desenvolvida para desktop e tem como principal intuito ajudar no controle e gerenciamento de vagas de emprego. O candidato realiza sua autenticação e pode encontrar, analisar e se canditar a vagas de emprego que possui interesse. Por outro lado, o RH consegue analisar os currículos dos candidatos para uma determinada vaga, além de poder aprovar ou reprovar os mesmos. </p>
 
 ## Tecnologias Utilizadas
@@ -294,11 +294,65 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 <br><br>
 
 ## Contribuições Pessoais
-### Visualizar vagas de emprego
-### Contribuição 2
-### Contribuição 3
-### Contribuição 4
+### Cadastro de vagas de emprego
+<p>Esta é uma das principais funcionalidades da aplicação, pois é necessário o cadastro de vagas de emprego para que os candidatos possam analisá-las e se candidatarem. A responsabilidade da criação de uma vaga de emprego é do RH da empresa, que deverá detalhar os componentes que fazem parta da mesma. Entre os campos que uma vaga de emprego deve possuir temos, o nome, uma breve descrição, pretensão salarial, cargo e experiência necessária que o candidato deve ter.  </p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+  <p>Para criar uma nova vaga de emprego, foi necessário compreender a estrutura das tabelas do banco de dados desenvolvido, além de possuir um conhecimento básico da linguagem de programação Java. Primeiramente, no banco de dados, foi criada uma nova tabela destinada a armazenar as informações relacionadas à vaga de emprego. Em seguida, foi desenvolvida uma classe em Java que funciona como um Data Transfer Object (DTO) para armazenar temporariamente os dados da vaga.
+
+Após isso, uma nova classe em Java foi criada para inserir registros dentro do banco de dados. Dentro desta classe, foi implementado um método específico que chama outro método de outra classe para estabelecer a conexão com o banco de dados. Depois, um comando SQL foi escrito para cadastrar as vagas de emprego no banco. As informações sobre a vaga de emprego são coletadas por meio de uma interface gráfica (GUI). Esta interface coleta os dados e os passa para a classe que armazena temporariamente essas informações.
+
+A classe que contém o método de cadastro de vagas no banco então coleta os dados do DTO e os incorpora ao comando SQL. Finalmente, este método executa o comando no banco de dados, criando a nova vaga de emprego. Este processo garante que as vagas sejam inseridas corretamente e de maneira eficiente no sistema, facilitando o gerenciamento e a manutenção das informações sobre as oportunidades de emprego disponíveis.  </p>
+<p>Abaixo é mostrado o método utilizado para inserir uma vaga de emprego no banco de dados: </p>
+
+  ``` java
+    public class VagaDAO {
+            Connection conn;
+            PreparedStatement pstm;
+
+            public void cadastrarvaga(Vaga obj_cadastro_vaga){
+            
+            String sql = "insert into vaga(nome_vaga, descricao_vaga, pretencao_salarial, cargo, experiencia_profissional_necessaria, quantidade_candidatos, status) values (?, ?, ?, ?, ?, ?, ?)";
+            conn = new ConexaoDAO().conectaBD();
+            
+            try {
+                
+                pstm = conn.prepareStatement(sql);
+                
+                pstm.setString(1,obj_cadastro_vaga.getNome());
+                pstm.setString(2,obj_cadastro_vaga.getDescricao());
+                pstm.setDouble(3,obj_cadastro_vaga.getSalario());
+                pstm.setString(4,obj_cadastro_vaga.getCargo());
+                pstm.setString(5,obj_cadastro_vaga.getExpe_prof());
+                pstm.setInt(6, 0);
+                pstm.setString(7, "ABERTA");
+                pstm.execute();
+                pstm.close();
+                
+                JOptionPane.showMessageDialog(null, "Vaga Cadastrada");
+                
+                
+            } catch (SQLException erro) {
+                JOptionPane.showMessageDialog(null,"VagaDAO: Cadastrar" + erro);
+            
+            }
+        }
+     }
+  ```
+</details>
+<br>
+
+### Criação de Banco de Dados
+### Cadastro de Vagas de Emprego
+### 
 <hr></hr>
 <br><br>
 
 ## Aprendizados
+
+<br><br>
+### - Hard Skills:
+
+### - Soft Skills:
+
+<hr></hr>
