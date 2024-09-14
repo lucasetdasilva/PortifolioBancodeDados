@@ -485,4 +485,20 @@ A classe que contém o método de cadastro de vagas no banco então coleta os da
 ### Predial
 ##### 4° Semestre • 2023-2
 <p>Parceiro Acadêmico: <a href="https://www.jaia.software/">Jaia Software</a></p>
-<p align = "center"><img src= "" width="250" height="250"></p>
+<p align = "center"><img src= "4Semestre/jaia.png" width="380" height="220"></p>
+
+<p>A aplicação... </p>
+
+## Tecnologias Utilizadas
+
+<br><br>
+
+## Contribuições Pessoais
+
+<br><br>
+
+## Aprendizados
+
+### - Hard Skills:
+
+### - Soft Skills:
