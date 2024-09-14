@@ -464,6 +464,8 @@ A classe que contém o método de cadastro de vagas no banco então coleta os da
 <br><br>
 
 ## Aprendizados
+<p>Durante o desenvolvimento do projeto, eu tive o papel de Product Owner, ou seja, tive a função de dialogar constantemente com o cliente parceiro, para tirar dúvidas da equipe, além de mostrar como estava o andamento do projeto. Também tive o papel de levantar os requisitos que deveriam ser desenvolvidos após a reunnião de kick-off com o cliente.</p>
+<p>Ao mesmo tempo em que fui PO, também pude atuar na área de desenvolvimento. Fui responsável pela a elaboração do script de criação do banco de dados, além de </p>
 
 <br><br>
 ### - Hard Skills:
