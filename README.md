@@ -11,7 +11,7 @@
 <p align="center"><img src= "Images/fotominha.png" width="420" height="300"></p>
 
 <p>Me chamo Lucas Emanoel Teixeira Engracio da Silva, tenho 20 anos. Sou técnico em Desenvolvimento de Sistemas pela Etec Profa.
-Ilza Nascimento Pintusa - SJC e atualmente estou matriculado no 5° Semestre do curso tecnólogo em Banco de Dados na FATEC de 
+Ilza Nascimento Pintusa - SJC e atualmente estou matriculado no 6° Semestre do curso tecnólogo em Banco de Dados na FATEC de 
 São José dos Campos.</p>
 
 <p>Possuo um grande conhecimento na área da tecnologia da informação, já tendo aprendido a construir softwares desktop, aplicações mobile, sistemas embarcados e aplicações web. Porém a minha maior paixão é na área de dados, construindo, manipulando e gerenciando um banco de dados.</p>
@@ -375,11 +375,91 @@ A classe que contém o método de cadastro de vagas no banco então coleta os da
 <summary><h4>Mais detalhes</h4></summary>
   <p>Para implementar a funcionalidade, deve-se ter uma relação entre as tabelas de Candidato e Vaga. Por meio da modelagem de dados foi entendido que as tabelas Candidato e Vaga tem relação entre si, sendo que nenhum ou muitos candidatos podem se candidatar a uma vaga e uma vaga pode ser concorrida por nenhuma ou muitas pessoas. Com base neste tipo de relação, foi necessário criar uma nova tabela contendo as chaves primárias da tabela de Candidato e Vaga, essas mesmas chaves são também ao mesmo tempo chaves estrangeiras. Foi necessário criar um método em Java, que faz a conexão com o banco de dados e altera as colunas status da vaga e motivo, dependendo se o candidato foi aprovado ou reprovado na vaga. Este método chama outro método de uma outra classe para fazer a conexão com o banco de dados e em seguida é executado uma consulta para poder coletar todas as vagas que um determinado candidato se candidatou. O resultado da consulta é armazenada dentro de uma lista, que depois é transferida para uma tabela da interface gráfica, sendo finalmente exibida ao candidato. </p>
   <p>Abaixo é mostrado como é realizada a consulta das vagas relacionadas a um determinado candidato:</p>
-  
+
+  ```java
+      public ArrayList<Candidato_Vaga> MostrarVagas(Candidato objcandidato){
+        
+        String sql = "select v.nome_vaga,cv.status_vaga,cv.motivo from vaga as v "
+                + "inner join candidato_vaga as cv on v.id_vaga = cv.fk_id_vaga "
+                + "inner join candidato as cand on cand.cpf = cv.fk_cpf where cpf = ?";
+        
+        conn = new ConexaoDAO().conectaBD();
+        
+        try{
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, objcandidato.getCPF());
+            ResultSet rs = pstm.executeQuery();
+            
+            while (rs.next()){
+                Candidato_Vaga objcv = new Candidato_Vaga();
+                objcv.setNome_vaga(rs.getString("nome_vaga"));
+                objcv.setStatus(rs.getString("status_vaga"));
+                objcv.setMotivo(rs.getString("motivo"));
+                lista.add(objcv);
+                
+            }
+           
+            
+        } catch(SQLException e){
+            JOptionPane.showMessageDialog(null, "CandidatoDAO: MostrarVagas" + e);
+            return null;
+        }
+        return lista;
+    }
+    
+    public ResultSet LoginCandidato(Candidato objcandidato){
+        String sql = "select * from candidato where cpf = ? and senha = MD5(?)";
+        conn = new ConexaoDAO().conectaBD();
+        
+        try {
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, objcandidato.getCPF());
+            pstm.setString(2,objcandidato.getSenha());
+            ResultSet rs = pstm.executeQuery();
+            return rs;
+        } catch(SQLException erro){
+            JOptionPane.showMessageDialog(null, "CandidatoDAO" + erro);
+            return null;
+        }
+        
+    }
+  ```
 </details>
 <br>
 
-### Login do RH
+### Autenticação do RH
+<p>Uma das funções primordiais ao se desenvolver um sistema é a autenticação, pois é com a mesma que os usuários conseguirão acessar as informações e executar tarefas dentro da aplicação. Para cada perfil de usuário deve ser apresentado páginas diferentes, pois os mesmos exercem funções diferentes na aplicação. Um candidato deve ter a visibilidade de vagas de emprego, progresso de vagas que está concorrendo por exemplo, enquanto uma pessoa do RH é responsável por criar as vagas e aprovar ou reprovar os candidatos.</p>
+<details>
+  <summary><h4>Mais detalhes</h4></summary>
+  <p>A autenticação na aplicação precisa ser capaz de saber quem é um perfil RH e um perfil Candidato, para apresentar as devidas páginas corretamente. Para isso, foi criada uma 
+  tela de autenticação unificada, ou seja, todos os usuários da aplicação utilizam a mesma tela para ingressar. Nesta tela foi criado dois campos clicáveis, em que é possível 
+  escolher qual perfil de usuário a pessoa é. Em seguida, o usuário preenche os campos de CPF e Senha e clica no botão para entrar na aplicação. Ao clicar no botão, o sistema
+  coleta os dados preenchidos pelo usuário e executa uma consulta no banco de dados para saber se o usuário está cadastrado. Caso usuário exista, um pop-up é apresentado dando 
+  boas-vindas ao mesmo e abrindo a home page do usuário RH, caso o contrário, é apresentado um pop-up esclarecendo que a o CPF e/ou a senha estão incorretos. </p>
+  <p>Abaixo é mostrado como é realizada a consulta para saber se o usuário RH existe no banco de dados:</p>
+  
+  ```java
+      public ResultSet loginRh(Rh objrh) {
+    
+        conn = new ConexaoDAO().conectaBD();
+    
+        try {
+          
+            String sql = "select * from rh where cpf = ? and senha = MD5(?)";
+            PreparedStatement pstm2 = conn.prepareStatement(sql);
+           
+            pstm2.setString(1, objrh.getCpf());
+            pstm2.setString(2, objrh.getSenha());
+            
+            ResultSet rs = pstm2.executeQuery();
+            return rs;
+        } catch (SQLException erro) {
+            JOptionPane.showMessageDialog(null, "RHdao" + erro);
+            return null;
+        }
+    }
+```
+</details>
 <hr></hr>
 <br><br>
 
