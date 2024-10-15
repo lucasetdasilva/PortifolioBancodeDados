@@ -644,20 +644,16 @@ Como Scrum Master da minha equipe pude entender como deve ser realizado a organi
 Como desenvolvedor pude aprimorar meus conhecimentos em modelagem de dados, além de estudar e aplicar os conhecimentos que adquiri com o framework SpringBoot, para o desenvolvimento do back-end da aplicação. 
 
 ### - Hard Skills:
-Criação de rota REST (método PUT)
-<br>
-Desenvolvimento Back-end utilizando o framework SpringBoot, pertencente a linguagem Java
-<br>
-Modelagem de Banco de Dados
+* Criação de rota REST (método PUT)
+* Desenvolvimento Back-end utilizando o framework SpringBoot, pertencente a linguagem Java
+* Modelagem de Banco de Dados
 <br>
 
 ### - Soft Skills:
-Comunicação
-<br>
-Organização
-<br>
-Inteligência Emocional
-
+* Comunicação
+* Organização
+* Inteligência Emocional
+<br><br>
 
 ### Predial
 ##### 4° Semestre • 2023-2
