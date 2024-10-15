@@ -647,7 +647,6 @@ Como desenvolvedor pude aprimorar meus conhecimentos em modelagem de dados, alé
 * Criação de rota REST (método PUT)
 * Desenvolvimento Back-end utilizando o framework SpringBoot, pertencente a linguagem Java
 * Modelagem de Banco de Dados
-<br>
 
 ### - Soft Skills:
 * Comunicação
