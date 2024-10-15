@@ -279,6 +279,7 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 * Autonomia
 * Proatividade
 <hr></hr>
+<br>
 
 ### PRO4Jobs
 ##### 2° Semestre • 2022-2
@@ -481,8 +482,7 @@ A classe que contém o método de cadastro de vagas no banco então coleta os da
 * Gestão de Tempo
 * Inteligência Emocional
 <hr></hr>
-
-<br><br>
+<br>
 
 ### Sistema Gerenciador de Vendas
 
@@ -653,7 +653,7 @@ public class Produto {
 * Organização
 * Inteligência Emocional
 <hr></hr>
-<br><br>
+<br>
 
 ### Predial
 ##### 4° Semestre • 2023-2
