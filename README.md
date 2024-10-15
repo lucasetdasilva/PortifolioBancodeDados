@@ -490,7 +490,7 @@ A classe que contém o método de cadastro de vagas no banco então coleta os da
 
 Parceiro Acadêmico: DomRock
 <br>
-<img src= "Images/domrock.png" width="800" height="130">
+<img src= "3Semestre/domrock.png" width="800" height="130">
 <br><br>
 
 O Sistema Gerenciador de Vendas é uma aplicação web voltada para o armazenamento e gerenciamento de vendas realizadas por vendedores. O intuito da aplicação é coletar os dados das vendas e transformar em valor de negócio por meio da geração de insights (gráficos), com isso deixando mais fácil de entender o que realmente está acontecendo com os dados.
