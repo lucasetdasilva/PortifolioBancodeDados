@@ -667,7 +667,7 @@ public class Produto {
 <p>Parceiro Acadêmico: <a href="https://www.jaia.software/">Jaia Software</a></p>
 <p align = "center"><img src= "4Semestre/jaia.png" width="380" height="220"></p>
 
-<p>A aplicação... </p>
+<p>O projeto envolve desenvolver uma aplicação web voltada para o gerenciamento de inspeções prediais, onde o cliente faz um pedido de inspeção, e a empresa cria uma ordem de serviço com base nessa solicitação. Na plataforma, o inspetor poderá registrar de forma detalhada suas observações sobre o ambiente do cliente, gerando um documento final com essas informações. Além disso, o administrador terá a capacidade de criar checklists específicos para diferentes departamentos, além de gerenciar funcionários e departamentos, realizando operações como cadastro, exclusão, visualização e edição.</p>
 
 ## Tecnologias Utilizadas
 
