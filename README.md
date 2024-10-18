@@ -720,5 +720,5 @@ public class Produto {
 ### Tecsus
 ##### 5° Semestre • 2024-1
 <p>Parceiro Acadêmico: <a href="https://tecsus.com.br/">Tecsus</a></p>
-<p align = "center"><img src= "5Semestre/tecsus.png" width="380" height="220"></p>
+<p align = "center"><img src= "5Semestre/tecsus.png" width="300" height="100"></p>
 
