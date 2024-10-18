@@ -11,6 +11,7 @@
 #### 2° Semestre: [PRO4Jobs](#pro4jobs)
 #### 3° Semestre: [Sistema Gerenciador de Vendas](#sistema-gerenciador-de-vendas)
 #### 4° Semestre: [Predial](#predial)
+#### 5° Semestre: [Tecsus](#tecsus)
 
 <hr></hr>
 
@@ -682,7 +683,7 @@ public class Produto {
 
 ## Contribuições Pessoais
 ### Listagem de requisições dos clientes
-<p></p>
+<p>Quando um cliente quer realizar uma inspeção em seu ambiente corporativo, visando o bem-estar dos colaboradores </p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
 </details>
@@ -712,3 +713,12 @@ public class Produto {
 ### - Hard Skills:
 
 ### - Soft Skills:
+
+<hr></hr>
+<br>
+
+### Tecsus
+##### 5° Semestre • 2024-1
+<p>Parceiro Acadêmico: <a href="https://tecsus.com.br/">Tecsus</a></p>
+<p align = "center"><img src= "5Semestre/tecsus.png" width="380" height="220"></p>
+
