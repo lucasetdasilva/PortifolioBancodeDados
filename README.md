@@ -681,8 +681,31 @@ public class Produto {
 <br><br>
 
 ## Contribuições Pessoais
+### Listagem de requisições dos clientes
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+</details>
 
-<br><br>
+### Atualização de funcionários
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+</details>
+
+### Listagem de funcionários
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+</details>
+
+### Deleção de funcionário
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+</details>
+
+<hr></hr>
 
 ## Aprendizados
 
