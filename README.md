@@ -19,7 +19,7 @@
 <p align="center"><img src= "Images/fotominha.png" width="420" height="300"></p>
 
 <p>Me chamo Lucas Emanoel Teixeira Engracio da Silva, tenho 20 anos. Sou técnico em Desenvolvimento de Sistemas pela Etec Profa.
-Ilza Nascimento Pintusa - SJC e atualmente estou matriculado no 6° Semestre do curso tecnólogo em Banco de Dados na FATEC de 
+Ilza Nascimento Pintus - SJC e atualmente estou matriculado no 6° Semestre do curso tecnólogo em Banco de Dados na FATEC de 
 São José dos Campos.</p>
 
 <p>Possuo um grande conhecimento na área da tecnologia da informação, já tendo aprendido a construir softwares desktop, aplicações mobile, sistemas embarcados e aplicações web. Porém a minha maior paixão é na área de dados, construindo, manipulando e gerenciando um banco de dados.</p>
@@ -682,10 +682,17 @@ public class Produto {
 <br><br>
 
 ## Contribuições Pessoais
-### Listagem de requisições dos clientes
-<p>Quando um cliente quer realizar uma inspeção em seu ambiente corporativo, visando o bem-estar dos colaboradores </p>
+### Cadastro de requisições dos clientes
+<p>Quando um cliente deseja solicitar uma inspeção predial em seu ambiente corporativo, com foco no bem-estar dos colaboradores, ele pode utilizar a aplicação web para abrir uma nova requisição. Nessa etapa, o cliente especificará o que precisa ser inspecionado. Após o cadastro, a requisição é enviada à empresa responsável pela inspeção, que analisará os detalhes e, com base nisso, criará uma Ordem de Serviço (OS). </p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
+	<p>A requisição dos clientes aborda muitas camadas a serem desenvolvidas. Entre essas camadas se encontra o framework Vue (frontend), utilizado para a criação de interfaces de
+	usuário. Para que este framework funcione de maneira correta, ele deve apresentar e exibir as informações que estão armazenadas no banco de dados ao usuário. Isso só é possível pois o Vue 
+        utiliza caminhos para se comunicar com o backend da aplicação, que consegue acessar o banco de dados e obter ou exibir os dados necessários na tela do usuário. Para a criação das 
+        requisições dos clientes, deve-se primeiro criar um formulário para o preenchimento das informações por parte do cliente. Feito isso, foi necessário criar variavéis no Vue para essas 
+        informações  
+        apresentar ao usuário, 
+	isso é realizado  Em relação ao frontend, foi necessário a criação de uma função assíncrona, que obtém os dados do cliente solicitante, utilizando o método "get"  </p>
 </details>
 
 ### Atualização de funcionários
