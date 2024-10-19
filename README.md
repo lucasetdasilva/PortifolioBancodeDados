@@ -686,13 +686,7 @@ public class Produto {
 <p>Quando um cliente deseja solicitar uma inspeção predial em seu ambiente corporativo, com foco no bem-estar dos colaboradores, ele pode utilizar a aplicação web para abrir uma nova requisição. Nessa etapa, o cliente especificará o que precisa ser inspecionado. Após o cadastro, a requisição é enviada à empresa responsável pela inspeção, que analisará os detalhes e, com base nisso, criará uma Ordem de Serviço (OS). </p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-	<p>A requisição dos clientes aborda muitas camadas a serem desenvolvidas. Entre essas camadas se encontra o framework Vue (frontend), utilizado para a criação de interfaces de
-	usuário. Para que este framework funcione de maneira correta, ele deve apresentar e exibir as informações que estão armazenadas no banco de dados ao usuário. Isso só é possível pois o Vue 
-        utiliza caminhos para se comunicar com o backend da aplicação, que consegue acessar o banco de dados e obter ou exibir os dados necessários na tela do usuário. Para a criação das 
-        requisições dos clientes, deve-se primeiro criar um formulário para o preenchimento das informações por parte do cliente. Feito isso, foi necessário criar variavéis no Vue para essas 
-        informações  
-        apresentar ao usuário, 
-	isso é realizado  Em relação ao frontend, foi necessário a criação de uma função assíncrona, que obtém os dados do cliente solicitante, utilizando o método "get"  </p>
+	<p>A requisição dos clientes aborda muitas camadas a serem desenvolvidas. Entre essas camadas se encontra o framework Vue (frontend), utilizado para a criação de 	interfaces de usuário. Para que este framework funcione de maneira correta, ele deve apresentar e exibir as informações que estão armazenadas no banco de dados ao 	usuário. Isso só é possível pois o Vue utiliza caminhos para se comunicar com o backend da aplicação, que consegue acessar o banco de dados e obter ou exibir os 	dados necessários na tela do usuário. Para a criação das requisições dos clientes, deve-se primeiro criar um formulário para o preenchimento das informações por 	parte do cliente. Feito isso, foi necessário criar variavéis no Vue para armazenar essas informações. Por último, foi criada uma função assícrona que obtém as 		informações de um determinado usuário, utilizando o método "get", em seguida foi realizado o método "post", para enviar o cadastro de requisição para o backend, que 	depois passará a informação ao banco de dados. Com base na resposta do método "get", foi possível obter o campo "Id" do cliente. Sem este campo não seria possível o 	cadastro da requisição, pois é necessário a informação de quem a solicitou, para que o administrador do sistema consiga criar a Ordem de Serviço.</p>
 </details>
 
 ### Atualização de funcionários
