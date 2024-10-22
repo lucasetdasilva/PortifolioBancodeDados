@@ -502,9 +502,7 @@ A classe que contém o método de cadastro de vagas no banco então coleta os da
 <br><br>
 
 <p>O Sistema Gerenciador de Vendas é uma aplicação web voltada para o armazenamento e gerenciamento de vendas realizadas por vendedores. O intuito da aplicação é coletar os dados das vendas e transformar em valor de negócio por meio da geração de insights (gráficos), com isso deixando mais fácil de entender o que realmente está acontecendo com os dados.</p>
-<br><br>
 <p>O sistema também dispõe de um algoritmo que prevê quanto um vendedor precisa vender com base na quantidade planejada de vendas e o que realmente foi realizado.</p>
-<br><br>
 
 ## Tecnologias Utilizadas
 
@@ -527,7 +525,7 @@ A classe que contém o método de cadastro de vagas no banco então coleta os da
 <p> O mapeamento de tabelas é um conceito em que associamos classes Java a tabelas de um banco de dados relacional. O mesmo tem como objetivo trazer visibilidade dos dados armazenados dentro do banco de dados para o usuário final da aplicação, com o intuito de realizar consultas, atualizações, criações ou deleções (CRUD). O mapeamento utiliza uma especificação do Java chamada JPA(Java Persistence API) que tem como função persistir os dados na aplicação, para utilizá-la precisamos criar anotações. A linguagem back-end Java transforma tabelas em classes por meio da anotação "@entity" e "@Table(name = "nome_da_tabela_no_banco_de_dados")". </p>
  <p>Para transformar colunas do banco de dados em atributos do Java, precisamos utilizar a anotação "@Column(name = "nome_da_coluna_no_banco_de_dados)", também podemos utilizar a anotação "@Id" que serve para declarar a chave primária de uma tabela. Outra anotação muito importante é a "@GeneratedValue(strategy = GenerationType.IDENTITY)", ela deve ser utilizada quando a chave primária é auto incrementada, ou seja, quando criamos um registro a chave primária é preenchida automaticamente.</p>
  
-<h3 align="center">Exemplo de aapeamento de tabela utilizado no projeto - Classe Produto</h3>
+<p>Abaixo é mostrado um exemplo de mapameamento da tabela de Produto:</p>
 
  ```java
 package com.main.api.model;
@@ -569,8 +567,7 @@ public class Produto {
 }
 ```
 </details>
-
-
+<br>
 
 ### Criação de rotas REST
 <p>A arquitetura REST é um estilo arquitetural que fornece diretrizes para o design e interação de sistemas distribuídos na web.</p>
@@ -580,7 +577,7 @@ public class Produto {
 <p>Em uma arquitetura REST, os recursos, que podem ser objetos, serviços ou conceitos, são identificados por URIs (Uniform Resource Identifiers). As operações sobre esses recursos são realizadas por meio dos métodos HTTP padrão, como GET para recuperar informações, POST para criar novos recursos, PUT para atualizar recursos existentes e DELETE para removê-los.</p>
 <p>A arquiteura REST foi de extrema importância no projeto, pois com ela podemos fazer a conexão entre o back-end e o front-end da aplicação web. Em outras palavras, significa que o back-end puxa as informações do banco de dados, processa as informações e em seguida transfere essas informações para o front-end, onde o usuário da aplicação pode executar ações que podem modificar, criar, deletar ou apenas visualizar estes dados, respeitando o privilégio de cada usuário no sistema.</p>
 
-<h3 align="center">Exemplo de uma rota REST - Método GET - Classe Produto</h3>
+<p> Abaixo é mostrado um exemplo de uma rota REST que mostra todos os produtos:</p>
 
  ```java
 @GetMapping("/list")
@@ -589,7 +586,7 @@ public class Produto {
 	}
 ```
 </details>
-
+<br>
 
 ### Modelagem do Banco de Dados
 <p>Todo sistema por mais simples que aparenta ser, necessita de um banco de dados para que as informações relevantes que percorrem a aplicação não sejam perdidas.</p>
@@ -602,10 +599,11 @@ public class Produto {
 </p> 
 <br>
  
-<h3 align="center">Modelagem de Banco de Dados do projeto</h3>
+<p>Abaixo é mostrado o Diagrama de Entidade Relacional da aplicação:</p>
 <br>
 <p align="center"> <img src= "3Semestre/der.png" width="450" height="300"></p>
 </details>
+<br>
 
 ### Atualização Planejamento de Vendas
 
@@ -616,7 +614,7 @@ public class Produto {
 <p>Uma das principais responsabilidades que um vendedor tem durante sua jornada na aplicação é o planejamento de vendas. Na aplicação um vendedor pode cadastrar um planejamento de suas vendas, ou seja, quanto ele acha que irá vender em um período de três meses para frente. Para realizar o cadastro é preciso ter mapeado as tabelas relacionadas as vendas, depois disso é necessário a construção da classe Controller (rotas REST) e a interface Repository (Queries). Na classe Controller deve ser criado um método de cadastro do planejamento de vendas. Por meio da URL passada pelo método é possível obter as informações e gravá-las dentro do banco de dados. Para que isso se concretize é necessário também utilizar a anotação "@PostMapping" responsável por cadastrar objetos no banco de dados. </p>
 <p>Para cada mês que passar o vendedor terá que atualizar o planejamento, adicionando o que realmente foi vendido em um determinado mês. Para isso deve ser criado na classe Controller um método de atualização, por meio da anotação "@PutMapping". Com o cadastro e a atualização do planejamento de vendas de um determinado vendedor, é gerado um dashboard em que é mostrado três linhas: um para o planejamento de vendas, um para o que realmente foi vendido e uma para a predição. Com este dashboard o vendedor poderá entender em qual situação ele se encontra e conseguirá tomar as melhores decisões para o seu negócio.</p>
 
-<h3 align="center">Exemplo de método - Atualização do planejamento de vendas</h3>
+<p>Abaixo é mostrado a implementação do método de atualização do planejamento de vendas:</p>
 
  ```java
 @PutMapping("/update/{vendaId}")
@@ -669,7 +667,6 @@ public class Produto {
 <p align = "center"><img src= "4Semestre/jaia.png" width="380" height="220"></p>
 
 <p>O projeto envolve desenvolver uma aplicação web voltada para o gerenciamento de inspeções prediais, onde o cliente faz um pedido de inspeção, e a empresa cria uma ordem de serviço com base nessa solicitação. Na plataforma, o inspetor poderá registrar de forma detalhada suas observações sobre o ambiente do cliente, gerando um documento final com essas informações. Além disso, o administrador terá a capacidade de criar checklists específicos para diferentes departamentos, além de gerenciar funcionários e departamentos, realizando operações como cadastro, exclusão, visualização e edição.</p>
-<br>
 
 ## Tecnologias Utilizadas
 
@@ -689,18 +686,21 @@ public class Produto {
 	<p>A requisição dos clientes aborda muitas camadas a serem desenvolvidas. Entre essas camadas se encontra o framework Vue (frontend), utilizado para a criação de 	interfaces de usuário. Para que este framework funcione de maneira correta, ele deve apresentar e exibir as informações que estão armazenadas no banco de dados ao 	usuário. Isso só é possível pois o Vue utiliza caminhos para se comunicar com o backend da aplicação, que consegue acessar o banco de dados e obter ou exibir os 	dados necessários na tela do usuário. Para a criação das requisições dos clientes, deve-se primeiro criar um formulário para o preenchimento das informações por 	parte do cliente. Feito isso, foi necessário criar variavéis no Vue para armazenar essas informações.</p> 
 	<p>Por último, foi criada uma função assícrona que obtém as informações de um determinado usuário, utilizando o método "get", em seguida foi realizado o método 	"post", para enviar o cadastro de requisição para o backend, que depois passará a informação ao banco de dados. Com base na resposta do método "get", foi possível 	obter o campo "Id" do cliente. Sem este campo não seria possível o cadastro da requisição, pois é necessário a informação de quem a solicitou, para que o 		administrador do sistema consiga criar a Ordem de Serviço.</p>
 </details>
+<br>
 
 ### Atualização de funcionários
 <p></p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
 </details>
+<br>
 
 ### Listagem de funcionários
 <p></p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
 </details>
+<br>
 
 ### Deleção de funcionário
 <p></p>
