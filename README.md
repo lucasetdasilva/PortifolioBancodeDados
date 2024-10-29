@@ -710,7 +710,8 @@ public class Produto {
 <p>Quando um dado não é mais válido, por diferentes questões, se faz necessário a sua alteração. Isso ajuda o administrador da aplicação a ter a garantia que qualquer alteração feita pelos funcionários será mostrado a ele.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-<p>Para que seja realizada a alteração dos dados de um determinado cliente, é necessário encontrar o registro do mesmo e por fim realizar as alterações desejadas. </p>	
+<p>Para que seja realizada a alteração dos dados de um determinado cliente, é necessário encontrar o registro do mesmo e por fim realizar as alterações desejadas. A linguagem backend (Java) deve 
+obter estas informações dentro do banco de dados.</p>	
 </details>
 <br>
 
