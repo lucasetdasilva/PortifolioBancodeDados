@@ -712,6 +712,26 @@ public class Produto {
 <summary><h4>Mais detalhes</h4></summary>
 <p>Para que seja realizada a alteração dos dados de um determinado cliente, é necessário encontrar o registro do mesmo e por fim realizar as alterações desejadas. A linguagem backend (Java) deve 
 obter estas informações dentro do banco de dados.</p>	
+
+<p>Abaixo é mostrado o método de atualização de um funcionário:</p>
+ 
+```java
+@PutMapping("/atualizar/{cpf}")
+    public ResponseEntity<Funcionario> atualizarFuncionario(
+        @PathVariable Integer cpf, 
+        @RequestBody Funcionario novoFuncionario
+    ) {
+        Funcionario funcionarioAtualizado = funcionarioService.atualizarFuncionario(cpf, novoFuncionario);
+        
+        if (funcionarioAtualizado != null) {
+            return ResponseEntity.ok(funcionarioAtualizado);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+```
+ 
 </details>
 <br>
 
