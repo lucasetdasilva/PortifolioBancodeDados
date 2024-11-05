@@ -707,7 +707,7 @@ public class Produto {
 <br>
 
 ### Atualização de funcionários
-<p>Quando um dado não é mais válido, por diferentes questões, se faz necessário a sua alteração. Isso ajuda o administrador da aplicação a ter a garantia que qualquer alteração feita pelos funcionários será mostrado a ele.</p>
+<p>Um método de atualização de dados de funcionários permite que administradores modifiquem informações desatualizadas ou incorretas, como nome e email. Esse método geralmente envolve a criação de um endpoint que recebe os dados atualizados e, a partir de uma consulta ao banco de dados, altera as informações do funcionário. Esse processo facilita a manutenção de dados precisos, garantindo que o sistema esteja sempre atualizado e ajudando na gestão eficiente dos colaboradores.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
 <p>Para que seja realizada a alteração dos dados de um determinado cliente, é necessário encontrar o registro do mesmo e por fim realizar as alterações desejadas. A linguagem backend (Java) deve obter estas informações dentro do banco de dados. Quando uma solicitação de atualização vem para o sistema, por meio de um endpoint HTTP PUT para a URL "/atualizar/{cpf}", o método "atualizarFuncionario" é acionado. Ele recebe o CPF do funcionário na URL (@PathVariable) e os novos dados do funcionário no corpo da requisição (@RequestBody). O método chama o serviço "funcionarioService.atualizarFuncionario(cpf,novoFuncionario)" para processar e atualizar o funcionário. Se a atualização for bem-sucedida, o método retorna o objeto Funcionario atualizado com status 200 (OK). Caso o funcionário não seja encontrado, retorna status 404 (Not Found).</p>	
@@ -734,7 +734,7 @@ public class Produto {
 <br>
 
 ### Listagem de funcionários
-<p></p>
+<p>Um método de visualização de dados de funcionários permite que administradores acessem informações atualizadas sobre os colaboradores, como nome e email. Geralmente, esse método envolve a criação de um endpoint que consulta o banco de dados e apresenta os dados de forma estruturada. Pode incluir filtros para facilitar a busca por informações específicas, ajudando na gestão eficiente dos funcionários e na tomada de decisões.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
 </details>
