@@ -737,6 +737,18 @@ public class Produto {
 <p>Um método de visualização de dados de funcionários permite que administradores acessem informações atualizadas sobre os colaboradores, como nome e email. Geralmente, esse método envolve a criação de um endpoint que consulta o banco de dados e apresenta os dados de forma estruturada. Pode incluir filtros para facilitar a busca por informações específicas, ajudando na gestão eficiente dos funcionários e na tomada de decisões.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
+<p>O endpoint mapeado pela anotação @GetMapping("/listarporcpf/{cpf}") expõe uma rota HTTP GET que recebe um parâmetro dinâmico, o CPF, diretamente na URL. O {cpf} é uma variável de caminho (path variable) que o Spring Boot automaticamente captura e passa como argumento para o método do controlador. No caso do projeto desenvolvido, a variável cpf é do tipo Integer.</p>
+<p>O método buscarFuncionarioPorCpf chama o serviço funcionarioService.buscarPorCpf(cpf), que é responsável por buscar no banco de dados um funcionário cujo CPF corresponda ao valor passado. Se o funcionário for encontrado, o método retorna um ResponseEntity com status HTTP 200 (OK) e o objeto Funcionario no corpo da resposta. O Spring converte automaticamente esse objeto em formato JSON, que é o formato esperado em APIs RESTful.</p>
+
+<p>Abaixo é mostrado o método de visualização de um funcionário:</p>
+ 
+```java
+@GetMapping("/listarporcpf/{cpf}")
+    public ResponseEntity<Funcionario> buscarFuncionarioPorCpf(@PathVariable Integer cpf) {
+        Funcionario funcionario = funcionarioService.buscarPorCpf(cpf);
+        return ResponseEntity.ok(funcionario);
+    }
+```
 </details>
 <br>
 
