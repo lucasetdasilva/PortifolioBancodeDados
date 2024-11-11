@@ -7,7 +7,7 @@
 
 ### Meus Projetos
 
-#### 1° Semestre: [Mó Viagem](#mó-viagem)
+#### 1° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/1Semestre/1Semestre.md">Mó Viagem</a>
 #### 2° Semestre: [PRO4Jobs](#pro4jobs)
 #### 3° Semestre: [Sistema Gerenciador de Vendas](#sistema-gerenciador-de-vendas)
 #### 4° Semestre: [Predial](#predial)
