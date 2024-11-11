@@ -253,4 +253,7 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 * Autonomia
 * Proatividade
 <hr></hr>
+<br>
+
+## Outros projetos:
 
