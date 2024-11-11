@@ -794,9 +794,16 @@ public class Produto {
 
 ## Tecnologias Utilizadas
 
+* __Java:__ Linguagem de programação backend;
+* __JavaScript:__ Linguagem de programação backend e frontend;
+* __Vue:__ Framework, da linguagem JavaScript, progressivo para construção de interfaces de usuário, que facilita a criação de aplicações web interativas e dinâmicas com uma abordagem reativa;
+* __HTML:__ É a linguagem de marcação padrão usada para estruturar e apresentar conteúdo na web;
+* __CSS:__ Liguagem de estilização da aplicação web;
+* __Oracle:__ Sistema Gerenciador de Banco de Dados utilizado para armazenar as informações da aplicação web.
 <br><br>
 
 ## Contribuições Pessoais
+
 
 <hr></hr>
 
