@@ -753,9 +753,20 @@ public class Produto {
 <br>
 
 ### Deleção de funcionário
-<p></p>
+<p>A deleção de um funcionário é o processo de remover permanentemente os dados de um funcionário do sistema, geralmente a partir de um identificador único, como o CPF. Esse processo envolve a exclusão dos registros relacionados ao funcionário no banco de dados, tornando esses dados inacessíveis para futuras operações ou consultas.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
+<p>O endpoint HTTP DELETE /deletar/{cpf} tem como objetivo permitir que o sistema exclua um funcionário utilizando o CPF como identificador único. Quando um cliente faz uma requisição DELETE para esse endpoint, o Spring Boot mapeia o CPF da URL para o método do controlador. O CPF é passado como parâmetro para o serviço funcionarioService, que contém a lógica de negócios para deletar o funcionário no banco de dados. Esse tipo de operação de deleção é crucial para manter a integridade e a precisão dos dados no sistema, especialmente em sistemas que precisam de manutenção contínua e atualizações regulares de registros. Além disso, deve-se tomar cuidado para garantir que apenas usuários autorizados, administradores, tenham permissão para realizar exclusões de dados, para evitar problemas de segurança.</p>
+
+<p>Abaixo é mostrado um método de exclusão de um funcionário:</p>
+
+```java
+ @DeleteMapping("/deletar/{cpf}")
+    public void deletarFuncionario(@PathVariable Integer cpf){
+        funcionarioService.deletarFuncionario(cpf);
+    }
+```
+
 </details>
 
 <hr></hr>
