@@ -803,6 +803,12 @@ public class Produto {
 <br><br>
 
 ## Contribuições Pessoais
+### Criação de caso de teste de integração
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+</details>
+<br>
 
 
 <hr></hr>
