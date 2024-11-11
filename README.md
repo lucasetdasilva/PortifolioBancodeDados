@@ -766,16 +766,21 @@ public class Produto {
         funcionarioService.deletarFuncionario(cpf);
     }
 ```
-
 </details>
-
 <hr></hr>
 
 ## Aprendizados
+<p>Como desenvolvedor pude continuar a aperfeiçoar meus conhecimentos em relação a modelagem e estruturação de bancos de dados, além de compreender melhor como funciona o mapeamento de tabelas, utilizando a linguagem Java. Também pude realizar a construção de casos de testes para verficar e validar se a aplicação estava se comportando de maneira esperada com base nos requisitos do sistema, assim garantindo a qualidade ao cliente. </p>
 
 ### - Hard Skills:
+* Mapeamento de tabelas (Spring Boot)
+* Modelagem de Banco de Dados
+* Criação de rotas REST
 
 ### - Soft Skills:
+* Planejamento
+* Aprendizagem contínua
+* Trabalho em equipe
 
 <hr></hr>
 <br>
@@ -784,4 +789,6 @@ public class Produto {
 ##### 5° Semestre • 2024-1
 <p>Parceiro Acadêmico: <a href="https://tecsus.com.br/">Tecsus</a></p>
 <p align = "center"><img src= "5Semestre/tecsus.png" width="300" height="100"></p>
+
+<p></p>
 
