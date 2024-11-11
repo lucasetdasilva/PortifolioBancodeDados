@@ -257,3 +257,8 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 
 ## Outros projetos:
 
+#### 2° Semestre: [PRO4Jobs](#pro4jobs)
+#### 3° Semestre: [Sistema Gerenciador de Vendas](#sistema-gerenciador-de-vendas)
+#### 4° Semestre: [Predial](#predial)
+#### 5° Semestre: [Tecsus](#tecsus)
+#### 6° Semestre: [SPC Grafeno](#spc-grafeno)
