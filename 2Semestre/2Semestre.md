@@ -201,3 +201,10 @@ A classe que contém o método de cadastro de vagas no banco então coleta os da
 <hr></hr>
 <br>
 
+## Outros projetos:
+
+#### 1° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/1Semestre/1Semestre.md">Mó Viagem</a>
+#### 3° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/3Semestre/3Semestre.md">Sistema Gerenciador de Vendas</a>
+#### 4° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/4Semestre/4Semestre.md">Predial</a>
+#### 5° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/5Semestre/5Semestre.md">Tecsus</a>
+#### 6° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/6Semestre/6Semestre.md">SPC Grafeno</a>
