@@ -1,5 +1,5 @@
+## 4° Semestre • 2023-2
 ### Predial
-##### 4° Semestre • 2023-2
 <p>Parceiro Acadêmico: <a href="https://www.jaia.software/">Jaia Software</a></p>
 <p align = "center"><img src= "Images/jaia.png" width="380" height="220"></p>
 
@@ -120,3 +120,11 @@
 
 <hr></hr>
 <br>
+
+## Outros projetos:
+
+#### 1° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/1Semestre/1Semestre.md">Mó Viagem</a>
+#### 2° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/2Semestre/2Semestre.md">PRO4Jobs</a>
+#### 3° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/3Semestre/3Semestre.md">Sistema Gerenciador de Vendas</a>
+#### 5° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/5Semestre/5Semestre.md">Tecsus</a>
+#### 6° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/6Semestre/6Semestre.md">SPC Grafeno</a>
