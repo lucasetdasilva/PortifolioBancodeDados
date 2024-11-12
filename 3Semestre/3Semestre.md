@@ -4,7 +4,7 @@
 
 <p>Parceiro Acadêmico: <a href="https://fatecsjc-prd.azurewebsites.net/">Dom Rock</a></p>
 <br>
-<img src= "3Semestre/domrock.png" width="800" height="130">
+<img src= "Images/domrock.png" width="800" height="130">
 <br><br>
 
 <p>O Sistema Gerenciador de Vendas é uma aplicação web voltada para o armazenamento e gerenciamento de vendas realizadas por vendedores. O intuito da aplicação é coletar os dados das vendas e transformar em valor de negócio por meio da geração de insights (gráficos), com isso deixando mais fácil de entender o que realmente está acontecendo com os dados.</p>
@@ -107,7 +107,7 @@ public class Produto {
  
 <p>Abaixo é mostrado o Diagrama de Entidade Relacional da aplicação:</p>
 <br>
-<p align="center"> <img src= "3Semestre/der.png" width="450" height="300"></p>
+<p align="center"> <img src= "Images/der.png" width="450" height="300"></p>
 </details>
 <br>
 
