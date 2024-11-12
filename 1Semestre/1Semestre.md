@@ -258,7 +258,7 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 ## Outros projetos:
 
 #### 2° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/2Semestre/2Semestre.md">PRO4Jobs</a>
-#### 3° Semestre: [Sistema Gerenciador de Vendas](#sistema-gerenciador-de-vendas)
-#### 4° Semestre: [Predial](#predial)
-#### 5° Semestre: [Tecsus](#tecsus)
-#### 6° Semestre: [SPC Grafeno](#spc-grafeno)
+#### 3° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/3Semestre/3Semestre.md">Sistema Gerenciador de Vendas</a>
+#### 4° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/4Semestre/4Semestre.md">Predial</a>
+#### 5° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/5Semestre/5Semestre.md">Tecsus</a>
+#### 6° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/6Semestre/6Semestre.md">SPC Grafeno</a>
