@@ -16,6 +16,27 @@
 <br><br>
 
 ## Contribuições Pessoais
+### Configuração da ferramenta Cypress
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+</details>
+<br>
+
+### Análise Estática
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+</details>
+<br>
+
+### Criação do fluxo de testes de integração
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+</details>
+<br>
+
 ### Criação de caso de teste de integração
 <p></p>
 <details>
@@ -23,8 +44,8 @@
 </details>
 <br>
 
-
 <hr></hr>
+<br><br>
 
 ## Aprendizados
 
