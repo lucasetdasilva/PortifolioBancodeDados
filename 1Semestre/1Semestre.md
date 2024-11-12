@@ -257,7 +257,7 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 
 ## Outros projetos:
 
-#### 2° Semestre: [PRO4Jobs](#pro4jobs)
+#### 2° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/2Semestre/2Semestre.md">PRO4Jobs</a>
 #### 3° Semestre: [Sistema Gerenciador de Vendas](#sistema-gerenciador-de-vendas)
 #### 4° Semestre: [Predial](#predial)
 #### 5° Semestre: [Tecsus](#tecsus)
