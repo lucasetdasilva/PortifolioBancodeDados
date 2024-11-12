@@ -1,7 +1,7 @@
 ### Tecsus
 ##### 5° Semestre • 2024-1
 <p>Parceiro Acadêmico: <a href="https://tecsus.com.br/">Tecsus</a></p>
-<p align = "center"><img src= "5Semestre/tecsus.png" width="300" height="100"></p>
+<p align = "center"><img src= "Images/tecsus.png" width="300" height="100"></p>
 
 <p>O projeto visa o desenvolvimento de uma aplicação web destinada à análise de consumo de contas de água, luz e gás dos clientes da empresa Tecsus. O principal objetivo da plataforma é fornecer aos funcionários da empresa insights valiosos sobre o comportamento dos consumidores, ajudando-os a identificar ações que possam melhorar a satisfação dos clientes com os serviços prestados. Além disso, a aplicação oferece suporte à tomada de decisões estratégicas, por meio de dashboards interativos e visualizações de dados, que apresentam informações detalhadas sobre os clientes e suas assinaturas de serviços de água, luz e gás. Dessa forma, a solução não só facilita o acompanhamento do consumo, mas também permite que a empresa otimize sua operação, fornecendo um panorama claro para a implementação de melhorias contínuas nos serviços.</p>
 
