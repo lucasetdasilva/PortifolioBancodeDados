@@ -9,7 +9,7 @@
 
 #### 1° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/1Semestre/1Semestre.md">Mó Viagem</a>
 #### 2° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/2Semestre/2Semestre.md">PRO4Jobs</a>
-#### 3° Semestre: [Sistema Gerenciador de Vendas](#sistema-gerenciador-de-vendas)
+#### 3° Semestre: <a href="https://github.com/lucasetdasilva/PortifolioBancodeDados/blob/main/3Semestre/3Semestre.md">Sistema Gerenciador de Vendas</a>
 #### 4° Semestre: [Predial](#predial)
 #### 5° Semestre: [Tecsus](#tecsus)
 #### 6° Semestre: [SPC Grafeno](#spc-grafeno)
