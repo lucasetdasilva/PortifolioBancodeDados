@@ -21,6 +21,11 @@
 <details>
 <summary><h4>Mais detalhes</h4></summary>
 <p>Cypress é um framework de teste da linguagem JavaScript. Tem como função construir e executar testes fim a fim, se baseando na navegação do usuário no sistema. Para configurar a ferramenta, foi necessário acessar o repositório do front-end em uma IDE de desenvolvimento e inserir o comando npm install cypress --save-dev. Após executar esse comando, a instalação do Cypress foi iniciada, sendo possível começar a criação de testes automatizados para a aplicação. A organização das pastas de testes já é configurada automaticamente pelo próprio Cypress, facilitando a estruturação do projeto. Por padrão, o arquivo de testes de integração do Cypress está localizado no diretório cypress/e2e/1-getting-started. O arquivo de exemplo que o Cypress gera inicialmente chama-se todo.cy.js, mas é possível criar novos arquivos de testes com nomes diferentes. </p>
+
+<p>Abaixo é exemplificado o processo de configuração da ferramenta Cypress:</p>
+
+<p align = "center"><img src= "Images/cypress.png" width="500" height="300"></p>
+  
 </details>
 <br>
 
