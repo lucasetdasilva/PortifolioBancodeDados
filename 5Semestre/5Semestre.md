@@ -17,9 +17,10 @@
 
 ## Contribuições Pessoais
 ### Configuração da ferramenta Cypress
-<p></p>
+<p>Para garantir a estabilidade da aplicação durante o processo de integração contínua (CI), foi adotada uma ferramenta especializada em testes de ponta a ponta (E2E). Com essa ferramenta, foram criados casos de teste de integração que verificam o funcionamento completo do sistema sempre que um pull request é enviado para a branch dev. Esses testes permitem assegurar que nenhuma funcionalidade essencial foi comprometida, promovendo uma maior confiança nas alterações realizadas e facilitando a identificação de problemas antes da implementação em produção.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
+<p>Cypress é um framework de teste da linguagem JavaScript. Tem como função construir e executar testes fim a fim, se baseando na navegação do usuário no sistema. Para configurar a ferramenta, foi necessário acessar o repositório do front-end em uma IDE de desenvolvimento e inserir o comando npm install cypress --save-dev. Após executar esse comando, a instalação do Cypress foi iniciada, sendo possível começar a criação de testes automatizados para a aplicação. A organização das pastas de testes já é configurada automaticamente pelo próprio Cypress, facilitando a estruturação do projeto. Por padrão, o arquivo de testes de integração do Cypress está localizado no diretório cypress/e2e/1-getting-started. O arquivo de exemplo que o Cypress gera inicialmente chama-se todo.cy.js, mas é possível criar novos arquivos de testes com nomes diferentes. </p>
 </details>
 <br>
 
