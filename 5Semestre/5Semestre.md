@@ -30,7 +30,7 @@
 <br>
 
 ### Análise Estática
-<p></p>
+<p>A Análise Estática é o processo de examinar o código-fonte de um programa sem executá-lo, com o objetivo de identificar erros, vulnerabilidades e melhorar a qualidade do software. Ela utiliza ferramentas automatizadas que analisam o código em busca de problemas como violações de padrões, inconsistências, problemas de segurança e possíveis falhas de desempenho. Esse tipo de análise é muito útil para encontrar problemas precocemente no ciclo de desenvolvimento, promovendo um código mais seguro, eficiente e fácil de manter.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
 </details>
