@@ -44,9 +44,10 @@ Para a análise estática do projeto, utilizou-se a ferramenta SonarCloud, uma s
 <br>
 
 ### Criação do fluxo de testes de integração
-<p></p>
+<p>Para validar o processo de DevOps, a equipe do projeto elaborou um fluxo detalhado que descreve o funcionamento do sistema. Entre as etapas definidas, destaca-se a realização dos testes de integração, essenciais para garantir que os diferentes módulos do projeto funcionem de forma conjunta e harmoniosa.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
+<p></p>
 </details>
 <br>
 
