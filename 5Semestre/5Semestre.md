@@ -33,7 +33,13 @@
 <p>A Análise Estática é o processo de examinar o código-fonte de um programa sem executá-lo, com o objetivo de identificar erros, vulnerabilidades e melhorar a qualidade do software. Ela utiliza ferramentas automatizadas que analisam o código em busca de problemas como violações de padrões, inconsistências, problemas de segurança e possíveis falhas de desempenho. Esse tipo de análise é muito útil para encontrar problemas precocemente no ciclo de desenvolvimento, promovendo um código mais seguro, eficiente e fácil de manter.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-<p>Para a realização da analise estatica do projeto foi utilizado a ferramenta SonnarCloud. Sendo uma ferramenta de análise de qualidade de código baseada em nuvem, que identifica bugs, vulnerabilidades e problemas de manutenção em projetos, promovendo práticas de codificação mais seguras e eficientes. Foi necessário configurar o repositório para que a ferramenta pudesse realizar as devidas análises. Ao ser feito solicitações de pull requests, o SonnarCloud é acionado automaticamente, realizando a analise estática e mostrando os resultados ao usuário. </p>
+<p>
+Para a análise estática do projeto, utilizou-se a ferramenta SonarCloud, uma solução baseada em nuvem que avalia a qualidade do código ao identificar bugs, vulnerabilidades e problemas de manutenção. Essa ferramenta auxilia na promoção de práticas de codificação mais seguras e eficientes. Foi necessário configurar o repositório para permitir que o SonarCloud realizasse as análises automaticamente. Sempre que uma pull request é criada, o SonarCloud é acionado, executando a análise estática e exibindo os resultados diretamente ao usuário, facilitando a detecção e correção de problemas antes da integração do código. </p>
+
+<p>Abaixo é exemplificado a aplicação SonnarCloud:</p>
+
+![SonnarCloud](Images/sonnar.gif)
+
 </details>
 <br>
 
