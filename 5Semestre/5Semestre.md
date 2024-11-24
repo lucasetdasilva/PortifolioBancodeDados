@@ -33,8 +33,7 @@
 <p>A Análise Estática é o processo de examinar o código-fonte de um programa sem executá-lo, com o objetivo de identificar erros, vulnerabilidades e melhorar a qualidade do software. Ela utiliza ferramentas automatizadas que analisam o código em busca de problemas como violações de padrões, inconsistências, problemas de segurança e possíveis falhas de desempenho. Esse tipo de análise é muito útil para encontrar problemas precocemente no ciclo de desenvolvimento, promovendo um código mais seguro, eficiente e fácil de manter.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-<p>
-Para a análise estática do projeto, utilizou-se a ferramenta SonarCloud, uma solução baseada em nuvem que avalia a qualidade do código ao identificar bugs, vulnerabilidades e problemas de manutenção. Essa ferramenta auxilia na promoção de práticas de codificação mais seguras e eficientes. Foi necessário configurar o repositório para permitir que o SonarCloud realizasse as análises automaticamente. Sempre que uma pull request é criada, o SonarCloud é acionado, executando a análise estática e exibindo os resultados diretamente ao usuário, facilitando a detecção e correção de problemas antes da integração do código. </p>
+<p>Para a análise estática do projeto, utilizou-se a ferramenta SonarCloud, uma solução baseada em nuvem que avalia a qualidade do código ao identificar bugs, vulnerabilidades e problemas de manutenção. Essa ferramenta auxilia na promoção de práticas de codificação mais seguras e eficientes. Foi necessário configurar o repositório para permitir que o SonarCloud realizasse as análises automaticamente. Sempre que uma pull request é criada, o SonarCloud é acionado, executando a análise estática e exibindo os resultados diretamente ao usuário, facilitando a detecção e correção de problemas antes da integração do código. </p>
 
 <p>Abaixo é exemplificado a aplicação SonnarCloud:</p>
 
@@ -47,7 +46,13 @@ Para a análise estática do projeto, utilizou-se a ferramenta SonarCloud, uma s
 <p>Para validar o processo de DevOps, a equipe do projeto elaborou um fluxo detalhado que descreve o funcionamento do sistema. Entre as etapas definidas, destaca-se a realização dos testes de integração, essenciais para garantir que os diferentes módulos do projeto funcionem de forma conjunta e harmoniosa.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-<p></p>
+<p>A realização de testes de integração é uma etapa fundamental no processo do projeto, pois permite identificar, de forma antecipada, possíveis problemas que podem surgir ao mesclar as branches na branch de desenvolvimento (Dev). Isso garante maior estabilidade e qualidade no código integrado, reduzindo erros antes das próximas etapas. Tudo começa com a ideia de uma nova funcionalidade, seguida pela criação de uma branch específica para seu desenvolvimento. Após a implementação, o desenvolvedor abre um pull request para integrar as alterações à branch principal de desenvolvimento (Dev), momento em que os testes de integração são acionados automaticamente.</p> 
+<p></p>Se os testes forem bem-sucedidos, o código é aprovado e segue para o deploy. Caso contrário, os problemas identificados são reportados por um analista de testes, e os responsáveis pela tarefa são notificados para encontrar e corrigir a causa raiz do erro. Após os ajustes, uma nova branch de correção é criada, e as alterações passam novamente pelo pipeline de testes. Esse ciclo se repete até que todos os problemas sejam resolvidos, garantindo que apenas código validado seja enviado para produção.</p>
+
+<p>Abaixo é mostrado o fluxo dos Testes de Integração:</p>
+
+<p align = "center"><img src= "Images/fluxo.png" width="850" height="400"></p>
+
 </details>
 <br>
 
