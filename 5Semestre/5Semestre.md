@@ -57,9 +57,37 @@
 <br>
 
 ### Criação de caso de teste de integração
-<p></p>
+<p>Com a configuração da ferramenta Cypress concluída, já é possível criar casos de testes de integração. Esses testes serão acionados automaticamente sempre que um desenvolvedor abrir um pull request para a branch principal de desenvolvimento (Dev), garantindo a validação contínua do código integrado.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
+<p>O Cypress cria automaticamente um arquivo chamado "todo.cy.js", que serve como ponto de partida para o desenvolvimento de casos de testes de integração. No caso de teste criado, o código realiza um teste automatizado simulando o processo de cadastro de dados a partir de um arquivo CSV. O teste começa acessando a página do formulário, selecionando opções em dois campos ComboBox e realizando o upload de um arquivo CSV válido. Em seguida, o teste aguarda o processamento do arquivo e verifica se a mensagem da tabela desaparece. Por fim, o código simula um clique no botão para enviar o formulário, completando o fluxo de cadastro. </p>
+
+<p>Abaixo é mostrado um caso de teste de integração (Teste de Cadastro):</p>
+
+``` javascript
+describe('Teste de cadastro com Cypress', () => {
+  it('Deve selecionar campos, importar CSV e cadastrar no banco de dados', () => {
+    // Visita a página onde está o formulário
+    cy.visit('http://localhost:8080/upload');
+    // Seleciona o primeiro campo ComboBox
+    cy.get('#conta').select('Conta de energia');
+    // Seleciona o segundo campo ComboBox
+    cy.get('#documento').select('Contrato');
+    // cy.get('#csv').input('teste_lucas.csv')
+     // Upload a valid CSV file
+     cy.get('#csv')
+     .attachFile('teste_lucas.csv'); // Replace with the path to your valid CSV file
+    // Wait for the file to be processed (adjust timeout if needed)
+    cy.wait(5000);
+    // Verify table data
+    cy.get('.container-table-message').should('not.exist'); // Table message shouldn't be visible 
+   
+    cy.get('#botao').click();
+    const fileContent = cy.get('#csv')
+    .attachFile('teste_lucas.csv');
+  });
+```
+
 </details>
 <br>
 
