@@ -95,10 +95,57 @@ describe('Teste de cadastro com Cypress', () => {
 <br><br>
 
 ## Aprendizados
+<p>Durante o projeto, tive a oportunidade de aprimorar técnicas relacionadas a testes de software, além de aprender a criar fluxos de processos para o desenvolvimento de software. Também desenvolvi habilidades na utilização da ferramenta Cypress, criando casos de testes de integração para garantir a qualidade e a confiabilidade do sistema.</p>
 
-### - Hard Skills:
+<h3 align = "center">Hard Skills</h3>
 
-### - Soft Skills:
+<table align="center">
+    <tr>
+      <th width="300px">Tecnologia/Metodologia</th>
+      <th width="300px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Cypress</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+    <tr>
+      <td>SonarCloud</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+    <tr>
+      <td>Documentação de Testes de Integração</td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+    <tr>
+      <td>Criação de Fluxos de Processos</td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+</table>
+
+<h3 align = "center">Soft Skills</h3>
+
+<table align="center">
+    <tr>
+      <th width="300px">Habilidade</th>
+      <th width="300px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Aprendizagem Contínua</td>
+      <td>Precisei aprender tecnologias novas para aplicar no projeto</td>
+    </tr>
+    <tr>
+      <td>Organização</td>
+      <td>Precisei organizar como os testes de integração seriam executados, por meio de fluxos</td>
+    </tr>
+    <tr>
+      <td>Inteligência Emocional</td>
+      <td>Precisei controlar as emoções e focar na entrega de resultado</td>
+    </tr>
+    <tr>
+      <td>Comunicação</td>
+      <td>Precisei me comunicar constantemente com os demais membros da equipe para que o fluxo do DevOps continuasse funcional</td>
+    </tr>
+</table>
 
 <hr></hr>
 <br>
