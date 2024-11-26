@@ -2,6 +2,7 @@
 ### 6° Semestre • 2024-2
 <p>Parceiro Acadêmico: <a href="https://spcgrafeno.com.br/">SPC Grafeno</a></p>
 <p align = "center"><img src= "Images/spc.jpeg" width="350" height="200"></p>
+<p>A solução proposta foi uma aplicação web que faz o gerenciamento de duplicatas dos clientes da SPC Grafeno, e com base nestas duplicadas foi criada uma Inteligência Artificial para compreender os comportamentos destes clientes, como ressência, frequência e valor. Com base nos resultados que a IA retornar a empresa SPC Grafeno poderá </p>
 
 
 <br>
