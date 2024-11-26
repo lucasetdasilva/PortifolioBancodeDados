@@ -3,9 +3,15 @@
 <p>Parceiro Acadêmico: <a href="https://spcgrafeno.com.br/">SPC Grafeno</a></p>
 <p align = "center"><img src= "Images/spc.jpeg" width="350" height="200"></p>
 <p>A solução proposta consiste em uma aplicação web que realiza a análise de duplicatas dos clientes da SPC Grafeno. A partir da identificação dessas duplicatas, foi desenvolvida uma Inteligência Artificial capaz de entender os comportamentos dos clientes, considerando aspectos como recorrência, frequência e valor das duplicatas geradas. Com os resultados fornecidos pela IA, a SPC Grafeno poderá adotar as estratégias mais eficazes para cada cliente.</p>
-
-
 <br>
+
+## Tecnologias Utilizadas
+* __:__
+* 
+<br><br>
+
+## Contribuições Pessoais
+### 
 
 ## Outros projetos:
 
