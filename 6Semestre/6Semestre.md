@@ -6,8 +6,13 @@
 <br>
 
 ## Tecnologias Utilizadas
-* __:__
-* 
+* __Python:__ Linguagem de programação backend;
+* __JavaScript:__ Linguagem de programação backend e frontend;
+* __Vue:__ Framework, da linguagem JavaScript, progressivo para construção de interfaces de usuário, que facilita a criação de aplicações web interativas e dinâmicas com uma abordagem reativa;
+* __HTML:__ É a linguagem de marcação padrão usada para estruturar e apresentar conteúdo na web;
+* __CSS:__ Liguagem de estilização da aplicação web;
+* __Mongo DB:__ O MongoDB é um banco de dados NoSQL, orientado a documentos, que armazena dados em formato JSON flexível, permitindo alta escalabilidade e desempenho em ambientes de grandes volumes de dados;
+* __PostgreSQL:__ Banco de dados relacional de código aberto, altamente confiável e extensível, que suporta SQL avançado e recursos como transações ACID e tipos de dados personalizados.
 <br><br>
 
 ## Contribuições Pessoais
