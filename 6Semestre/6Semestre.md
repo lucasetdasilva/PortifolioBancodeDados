@@ -16,7 +16,68 @@
 <br><br>
 
 ## Contribuições Pessoais
+### Importação de arquivo CSV
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+<p></p>
+<br>
+
+<p></p>
+
+<p align = "center"><img src= "Images/" width="500" height="300"></p>
+  
+</details>
+<br>
+
+### Criação de modelo de Inteligência Artificial (Modelo de Regressão)
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+<p></p>
+<br>
+
+<p></p>
+
+<p align = "center"><img src= "Images/" width="500" height="300"></p>
+  
+</details>
+<br>
+
+### Criação de Servidor
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+<p></p>
+<br>
+
+<p></p>
+
+<p align = "center"><img src= "Images/" width="500" height="300"></p>
+  
+</details>
+<br>
+
+<br>
+
 ### 
+<p></p>
+<details>
+<summary><h4>Mais detalhes</h4></summary>
+<p></p>
+<br>
+
+<p></p>
+
+<p align = "center"><img src= "Images/" width="500" height="300"></p>
+  
+</details>
+<br>
+
+<hr></hr>
+<br><br>
+
+## Aprendizados
 
 ## Outros projetos:
 
