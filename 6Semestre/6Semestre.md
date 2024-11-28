@@ -11,13 +11,13 @@
 * __Vue:__ Framework, da linguagem JavaScript, progressivo para construção de interfaces de usuário, que facilita a criação de aplicações web interativas e dinâmicas com uma abordagem reativa;
 * __HTML:__ É a linguagem de marcação padrão usada para estruturar e apresentar conteúdo na web;
 * __CSS:__ Liguagem de estilização da aplicação web;
-* __Mongo DB:__ O MongoDB é um banco de dados NoSQL, orientado a documentos, que armazena dados em formato JSON flexível, permitindo alta escalabilidade e desempenho em ambientes de grandes volumes de dados;
+* __Mongo DB:__ Banco de dados NoSQL, orientado a documentos, que armazena dados em formato JSON flexível, permitindo alta escalabilidade e desempenho em ambientes de grandes volumes de dados;
 * __PostgreSQL:__ Banco de dados relacional de código aberto, altamente confiável e extensível, que suporta SQL avançado e recursos como transações ACID e tipos de dados personalizados.
 <br><br>
 
 ## Contribuições Pessoais
-### Importação de arquivo CSV
-<p></p>
+### Exportação de arquivo CSV
+<p>Para assegurar o cumprimento da Lei Geral de Proteção de Dados (LGPD), foi implementada na aplicação a funcionalidade de exportação dos dados dos usuários. Essa funcionalidade garante que os usuários possam acessar seus dados pessoais a qualquer momento. Além disso, caso haja inconsistências ou não conformidades, o usuário tem a possibilidade de realizar as correções necessárias, proporcionando maior transparência e controle sobre suas informações.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
 <p></p>
