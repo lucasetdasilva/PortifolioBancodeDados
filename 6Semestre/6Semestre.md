@@ -16,7 +16,7 @@
 <br><br>
 
 ## Contribuições Pessoais
-### Exportação de arquivo CSV
+### Exportação de dados do usuário
 <p>Para assegurar o cumprimento da Lei Geral de Proteção de Dados (LGPD), foi implementada na aplicação a funcionalidade de exportação dos dados dos usuários. Essa funcionalidade garante que os usuários possam acessar seus dados pessoais a qualquer momento. Além disso, caso haja inconsistências ou não conformidades, o usuário tem a possibilidade de realizar as correções necessárias, proporcionando maior transparência e controle sobre suas informações.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
