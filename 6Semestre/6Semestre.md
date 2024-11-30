@@ -20,13 +20,43 @@
 <p>Para assegurar o cumprimento da Lei Geral de Proteção de Dados (LGPD), foi implementada na aplicação a funcionalidade de exportação dos dados dos usuários. Essa funcionalidade garante que os usuários possam acessar seus dados pessoais a qualquer momento. Além disso, caso haja inconsistências ou não conformidades, o usuário tem a possibilidade de realizar as correções necessárias, proporcionando maior transparência e controle sobre suas informações.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-<p>A exportação dos dados do usuário é feito em formato CSV. Para a criação da exportação dos dados, foi necessário a criação de uma view no Django. Primeiramente, é verificado se o ID do usuário existe </p>
+<p>Foi realizada a criação de uma API View chamada ExportCSVAPIView, que tem como objetivo gerar e fornecer um arquivo CSV com os dados de um membro do sistema. A classe utiliza a permissão AllowAny, permitindo o acesso sem restrições. Quando uma requisição GET é feita, o código tenta obter o id_user (identificador do usuário) a partir dos parâmetros da URL. Primeiro, ele valida se o id_user é um ObjectId válido. Se não for, retorna um erro 400 (requisição inválida). Caso o ID seja válido, tenta localizar o membro correspondente no banco de dados usando esse ID. Se o membro não for encontrado, retorna um erro 404 (não encontrado), e se houver qualquer outro erro, é retornado um erro 500 (erro interno).</p>
+  
+<p>Após encontrar o membro, o código serializa os dados desse usuário usando o MemberSerializer, que converte o objeto em um formato de dicionário. Em seguida, um arquivo CSV é gerado com esses dados. A resposta HTTP é configurada para ser um arquivo de texto no formato CSV, e o cabeçalho do arquivo inclui o nome do usuário e as chaves do dicionário como nomes das colunas. As informações do membro são então escritas no CSV como valores nas linhas abaixo do cabeçalho. Finalmente, o arquivo CSV é retornado como resposta para que o usuário possa baixá-lo.</p> 
 <br>
 
-<p></p>
+<p>Abaixo é apresentado a  API View que exporta os dados em formato CSV:</p>
 
-<p align = "center"><img src= "Images/" width="500" height="300"></p>
-  
+``` python
+class ExportCSVAPIView(APIView):
+    permission_classes = [AllowAny]  # Defina as permissões conforme necessário
+    def get(self, request, *args, **kwargs):
+        id_user = kwargs.get('_id')
+        # Verifica se id_user é um ObjectId válido
+        if not ObjectId.is_valid(id_user):
+            return Response({"detail": "ID inválido."}, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            # Usa o ObjectId para buscar o membro
+            member = Member.objects.get(_id=ObjectId(id_user))
+        except Member.DoesNotExist:
+            return Response({"detail": "Usuário não encontrado!"}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as e:
+            return Response({"detail": f"Erro interno: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        # Converte o objeto em dicionário
+        serializer = MemberSerializer(member)
+        data = serializer.data
+        # Cria uma resposta HTTP com o CSV
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = f'attachment; filename="{id_user}_data.csv"'
+        # Cria um escritor CSV
+        writer = csv.writer(response)
+        # Escreve o cabeçalho (nomes das colunas)
+        writer.writerow(data.keys())
+        # Escreve os dados do membro
+        writer.writerow(data.values())
+        return response
+
+``` 
 </details>
 <br>
 
