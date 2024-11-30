@@ -61,7 +61,7 @@ class ExportCSVAPIView(APIView):
 <br>
 
 ### Criação de modelo de Inteligência Artificial (Modelo de Regressão)
-<p></p>
+<p>Como parte dos requisitos obrigatórios do projeto, foi necessário desenvolver um modelo de Inteligência Artificial. A equipe decidiu testar diferentes modelos para identificar qual se adequaria melhor à aplicação. Para isso, foi criado um modelo de IA de regressão, com o objetivo de prever a quantidade de notas canceladas nos meses futuros.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
 <p></p>
