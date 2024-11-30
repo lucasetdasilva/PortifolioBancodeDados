@@ -64,7 +64,7 @@ class ExportCSVAPIView(APIView):
 <p>Como parte dos requisitos obrigatórios do projeto, foi necessário desenvolver um modelo de Inteligência Artificial. A equipe decidiu testar diferentes modelos para identificar qual se adequaria melhor à aplicação. Para isso, foi criado um modelo de IA de regressão, com o objetivo de prever a quantidade de notas canceladas nos meses futuros.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-<p></p>
+<p>Realizando a análise da base de dados disponibilizada pela SPC Grafeno, foi observado que poderia ser criada uma Inteligência Artificial que se basea nas colunas de criação de nota fiscal (created_at) e estado da nota fiscal (state). Com base n </p>
 <br>
 
 <p></p>
