@@ -64,12 +64,24 @@ class ExportCSVAPIView(APIView):
 <p>Como parte dos requisitos obrigatórios do projeto, foi necessário desenvolver um modelo de Inteligência Artificial. A equipe decidiu testar diferentes modelos para identificar qual se adequaria melhor à aplicação. Para isso, foi criado um modelo de IA de regressão, com o objetivo de prever a quantidade de notas canceladas nos meses futuros.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-<p>Realizando a análise da base de dados disponibilizada pela SPC Grafeno, foi observado que poderia ser criada uma Inteligência Artificial que se basea nas colunas de criação de nota fiscal (created_at) e estado da nota fiscal (state). Com base n </p>
+<p>Durante a análise da base de dados fornecida pela SPC Grafeno, identificou-se a possibilidade de criar uma Inteligência Artificial baseada nas colunas de criação de nota fiscal (created_at) e estado da nota fiscal (state). O objetivo principal do modelo desenvolvido foi prever a quantidade de notas fiscais canceladas nos meses futuros. Para isso, realizou-se inicialmente o tratamento dos dados, que incluiu a remoção de valores nulos e a conversão dos tipos de dados, garantindo a integridade e consistência da base. Em seguida, a base foi dividida em dois subconjuntos: 80% dos dados foram reservados para o treinamento e 20% para o teste.</p>
+<p>O modelo escolhido foi uma Árvore Aleatória de Regressão (Random Forest Regressor), que foi treinado utilizando os dados preparados. Após o treinamento, o modelo foi empregado para prever os cancelamentos de notas fiscais nos meses futuros, utilizando o conjunto de teste como referência. A avaliação do modelo foi realizada por meio de métricas como Acurácia e o Erro Absoluto Percentual Médio (MAPE), que forneceram uma análise detalhada do desempenho da solução.</p>
 <br>
 
-<p></p>
+<p>Abaixo é mostrado a criação do modelo de Inteligência Artificial de Regressão:</p>
 
-<p align = "center"><img src= "Images/" width="500" height="300"></p>
+``` python
+# Seleção das variáveis preditoras e variável alvo
+X = monthly_cancellations[['mes_x','ano_x'] + [col for col in monthly_cancellations.columns if col.startswith('state_')]]
+y = monthly_cancellations['total_canceladas']
+
+# Divisão dos dados em conjuntos de treino e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Criação e treinamento do modelo de Floresta Aleatória de Regressão
+model = RandomForestRegressor(n_estimators=100, random_state=42)
+model.fit(X_train, y_train)
+```
   
 </details>
 <br>
