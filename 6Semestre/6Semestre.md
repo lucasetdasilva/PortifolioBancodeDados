@@ -87,7 +87,7 @@ model.fit(X_train, y_train)
 <br>
 
 ### Criação de Servidor
-<p></p>
+<p>Após a criação da Inteligência Artificial de Agrupamento, foi necessária a construção de um servidor para integrar os resultados gerados pelo modelo com o sistema da SPC Grafeno. Este servidor converte os resultados da IA em formato JSON, permitindo sua transmissão para o backend, que, por sua vez, os encaminha ao frontend. Com a conclusão do servidor, a SPC Grafeno terá acesso à exibição dos resultados provenientes da IA diretamente na interface do sistema. Esses resultados permitirão identificar os clientes agrupados em clusters e, assim, realizar os descontos apropriados de forma mais estratégica e eficiente.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
 <p></p>
