@@ -90,13 +90,31 @@ model.fit(X_train, y_train)
 <p>Após a criação da Inteligência Artificial de Agrupamento, foi necessária a construção de um servidor para integrar os resultados gerados pelo modelo com o sistema da SPC Grafeno. Este servidor converte os resultados da IA em formato JSON, permitindo sua transmissão para o backend, que, por sua vez, os encaminha ao frontend. Com a conclusão do servidor, a SPC Grafeno terá acesso à exibição dos resultados provenientes da IA diretamente na interface do sistema. Esses resultados permitirão identificar os clientes agrupados em clusters e, assim, realizar os descontos apropriados de forma mais estratégica e eficiente.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-<p></p>
+<p>O modelo de IA utilizado na aplicação é baseado em agrupamento, no qual os clientes da SPC Grafeno são organizados em quatro clusters. Cada cluster é definido por características específicas, como Recência, Frequência e Valor das duplicatas criadas pelos clientes. Os resultados gerados pela IA são armazenados em uma tabela. No entanto, para que o backend possa transmitir esses dados ao frontend, foi necessário desenvolver um servidor utilizando o framework Flask. O servidor foi projetado para disponibilizar os resultados da IA em formato JSON por meio de requisições do tipo GET.</p>
+<p>A comunicação do servidor é configurada para operar na porta 5000, garantindo a integração eficiente entre as diferentes camadas da aplicação e permitindo a visualização dos resultados no frontend.</p>
 <br>
 
-<p></p>
+<p>Abaixo é mostrado o código-fonte para a criação do servidor:</p>
 
-<p align = "center"><img src= "Images/" width="500" height="300"></p>
-  
+``` python
+from flask import Flask, jsonify
+from kmeans import df_rfm_clip_scaled  # Importando o resultado da IA 
+
+app = Flask(__name__)
+
+@app.route('/api/clustering', methods=['GET'])
+def get_clustering_results():
+    try:
+        results = df_rfm_clip_scaled.copy()
+        results['participant_id'] = df_rfm_clip_scaled.index
+        return jsonify(results.to_dict(orient='records'))  # Retorna os dados como JSON
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)  # O servidor roda na porta 5000
+```
+
 </details>
 <br>
 
