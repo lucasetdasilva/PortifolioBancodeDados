@@ -120,16 +120,14 @@ if __name__ == '__main__':
 
 <br>
 
-### Pré processamento dos dados para utilização na IA 
-<p></p>
+### Pré processamento dos dados para utilização na IA de Regressão
+<p>Uma etapa crucial no desenvolvimento de uma Inteligência Artificial é o pré-processamento dos dados do dataset. Essa etapa envolve a limpeza e a transformação dos dados, garantindo que estejam consistentes, livres de ruídos e prontos para análise. Sem esse processo, os resultados da IA podem não condizer com a realidade, comprometendo a precisão e a utilidade das previsões ou análises.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
 <p></p>
 <br>
 
 <p></p>
-
-<p align = "center"><img src= "Images/" width="500" height="300"></p>
   
 </details>
 <br>
