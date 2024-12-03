@@ -187,17 +187,56 @@ A classe que contém o método de cadastro de vagas no banco então coleta os da
 
 <br>
 
-### - Hard Skills:
-* Desenvolvimento de scripts SQL (SGBD MySQL)
-* Desenvolvimento na linguagem Java, focado na manipulação e consulta de Banco de Dados
-* Utilização do Java Swing para desenvolvimento de páginas desktop
-* Auxílio no desnvolvimento da modelagem de dados
+<h3 align = "center">Hard Skills</h3>
 
-### - Soft Skills:
-* Organização
-* Trabalho em equipe
-* Gestão de Tempo
-* Inteligência Emocional
+<table align="center">
+    <tr>
+      <th width="300px">Tecnologia/Metodologia</th>
+      <th width="300px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Desenvolvimento de scripts SQL (SGBD MySQL)td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+    <tr>
+      <td>manipulação e consulta de Banco de Dados, utilizando Java</td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+    <tr>
+      <td>Java Swing</td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+    <tr>
+      <td>Modelagem de Dados</td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+</table>
+
+<h3 align = "center">Soft Skills</h3>
+
+<table align="center">
+    <tr>
+      <th width="300px">Habilidade</th>
+      <th width="300px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Organização</td>
+      <td>Precisei me organizar para realizar o priorização do backlog do produto</td>
+    </tr>
+    <tr>
+      <td>Trabalho em Equipe</td>
+      <td>Precisei trabalhar em equipe para que as entregas fossem entregues com uma alta qualidade</td>
+    </tr>
+    <tr>
+      <td>Gestão de Tempo</td>
+      <td>Precisei gerenciar meu tempo para entregar as atividaes no prazo estipulado</td>
+    </tr>
+    <tr>
+      <td>Inteligência Emocional</td>
+      <td>Precisei controlar minhas emoções para que meu emocional não atrapalhasse meu desempenho</td>
+    </tr>
+</table>
+
 <hr></hr>
 <br>
 
