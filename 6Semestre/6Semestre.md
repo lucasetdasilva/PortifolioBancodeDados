@@ -201,20 +201,20 @@ monthly_cancellations = pd.merge(monthly_cancellations, monthly_data, on='create
       <th width="300px">Descrição</th>
     </tr>
     <tr>
+      <td>Resolução de Problemas</td>
+      <td>Precisei identificar, analisar e encontrar soluções para os problemas encontrados durante o desenvolvimento das minhas tarefas</td>
+    </tr>
+    <tr>
+      <td>Comunicação Assertiva</td>
+      <td>Precisei me comunicar de forma clara e exata, para que eu e meus colegas tivéssemos trocas de conhecimento eficientes</td>
+    </tr>
+    <tr>
       <td>Aprendizagem Contínua</td>
-      <td>Precisei aprender tecnologias novas para aplicar no projeto</td>
+      <td>Precisei me aprofundar em conceitos que não tinha familiaridade</td>
     </tr>
     <tr>
-      <td>Organização</td>
-      <td>Precisei organizar como os testes de integração seriam executados, por meio de fluxos</td>
-    </tr>
-    <tr>
-      <td>Inteligência Emocional</td>
-      <td>Precisei controlar as emoções e focar na entrega de resultado</td>
-    </tr>
-    <tr>
-      <td>Comunicação</td>
-      <td>Precisei me comunicar constantemente com os demais membros da equipe para que o fluxo do DevOps continuasse funcional</td>
+      <td>Adaptabilidade</td>
+      <td>Precisei me adaptar as tecnologias de IA para concluir as minhas tarefas</td>
     </tr>
 </table>
 
