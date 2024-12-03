@@ -108,15 +108,55 @@
 ## Aprendizados
 <p>Como desenvolvedor pude continuar a aperfeiçoar meus conhecimentos em relação a modelagem e estruturação de bancos de dados, além de compreender melhor como funciona o mapeamento de tabelas, utilizando a linguagem Java. Também pude realizar a construção de casos de testes para verficar e validar se a aplicação estava se comportando de maneira esperada com base nos requisitos do sistema, assim garantindo a qualidade ao cliente. </p>
 
-### - Hard Skills:
-* Mapeamento de tabelas (Spring Boot)
-* Modelagem de Banco de Dados
-* Criação de rotas REST
+<h3 align = "center">Hard Skills</h3>
 
-### - Soft Skills:
-* Planejamento
-* Aprendizagem contínua
-* Trabalho em equipe
+<table align="center">
+    <tr>
+      <th width="300px">Tecnologia/Metodologia</th>
+      <th width="300px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Mapeamento de tabelas (Spring Boot)</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+    <tr>
+      <td>Modelagem de Banco de Dados</td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+    <tr>
+      <td>Criação de rotas REST</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+    <tr>
+      <td>Criação de cadastro de requisição</td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+</table>
+
+<h3 align = "center">Soft Skills</h3>
+
+<table align="center">
+    <tr>
+      <th width="300px">Habilidade</th>
+      <th width="300px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Planejamento</td>
+      <td>Precisei planejar minhas atividades para entregá-las no prazo</td>
+    </tr>
+    <tr>
+      <td>Aprendizagem contínua</td>
+      <td>Precisei aprender a implementar o mapeamento de tabelas na linguagem Java</td>
+    </tr>
+    <tr>
+      <td>Trabalho em equipe</td>
+      <td>Precisei estar constantemente em contato com meus colegas para entender o que cada um estava fazendo</td>
+    </tr>
+    <tr>
+      <td>Inteligência Emocional</td>
+      <td>Precisei controlar minhas emoções para que não interferissem no meu desempenho</td>
+    </tr>
+</table>
 
 <hr></hr>
 <br>
