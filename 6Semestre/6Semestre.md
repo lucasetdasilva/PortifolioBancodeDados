@@ -124,10 +124,40 @@ if __name__ == '__main__':
 <p>Uma etapa crucial no desenvolvimento de uma Inteligência Artificial é o pré-processamento dos dados do dataset. Essa etapa envolve a limpeza e a transformação dos dados, garantindo que estejam consistentes, livres de ruídos e prontos para análise. Sem esse processo, os resultados da IA podem não condizer com a realidade, comprometendo a precisão e a utilidade das previsões ou análises.</p>
 <details>
 <summary><h4>Mais detalhes</h4></summary>
-<p></p>
+<p>Após a definição clara da problemática que a Inteligência Artificial deve resolver, foi realizado o pré-processamento dos dados do dataset, uma etapa essencial para garantir a precisão e confiabilidade nos resultados previstos pela IA. Durante esse processo, diversos tratamentos foram aplicados para preparar os dados adequadamente. A conversão dos tipos de dados das colunas foi realizada para assegurar que cada dado fosse interpretado corretamente pelo modelo. Além disso, os dados foram agrupados por mês para calcular a quantidade de duplicatas canceladas mensalmente, proporcionando uma análise temporal dos padrões de cancelamento.</p>
+<p>Também foi aplicada a técnica de One-Hot Encoding na coluna state, transformando a variável categórica em variáveis binárias e facilitando a integração dessas informações no modelo de IA. Esses tratamentos foram fundamentais para preparar os dados e permitir a construção de um modelo mais robusto e preciso.</p> 
 <br>
 
-<p></p>
+<p>Abaixo é mostrado um exemplo de pré processamento de dados:</p>
+
+``` python
+data['created_at'] = pd.to_datetime(data['created_at'])
+
+# Filtrar as notas canceladas usando a coluna 'state'
+data['canceladas'] = data['state'].apply(lambda x: 1 if x == 'canceled' else 0)
+
+# Aplicar One-Hot Encoding na coluna 'state' no dataframe original
+estado_dummies = pd.get_dummies(data['state'], prefix='state')
+data = pd.concat([data, estado_dummies], axis=1)
+
+# Extração do mês e ano da data de criação
+data['mes'] = data['created_at'].dt.month
+data['ano'] = data['created_at'].dt.year
+
+# Agrupar os dados por mês para obter a quantidade de notas canceladas mensalmente
+data.set_index('created_at', inplace=True)
+monthly_cancellations = data.resample('ME')['canceladas'].sum().reset_index(name='total_canceladas')
+
+# Extrair características do mês e ano para a previsão
+monthly_cancellations['mes'] = monthly_cancellations['created_at'].dt.month
+monthly_cancellations['ano'] = monthly_cancellations['created_at'].dt.year
+
+# Agrupar por mês e somar os valores das dummies de estado
+monthly_data = data.resample('M').sum(numeric_only=True).reset_index()
+
+# Merge de `monthly_cancellations` com `monthly_data` para incluir `total_canceladas`
+monthly_cancellations = pd.merge(monthly_cancellations, monthly_data, on='created_at', how='left')
+```
   
 </details>
 <br>
@@ -136,6 +166,57 @@ if __name__ == '__main__':
 <br><br>
 
 ## Aprendizados
+<p>Durante o desenvolvimento do projeto, tive a oportunidade de aprender e praticar diversos conceitos de Inteligência Artificial, como o tratamento de dados e a criação de um modelo de Regressão utilizando o algoritmo de Floresta Aleatória. Além disso, adquiri conhecimento e experiência na implementação do conceito de exportação de dados do usuário, em conformidade com a Lei Geral de Proteção de Dados (LGPD), utilizando o framework Django. De forma geral, consegui assimilar a maior parte do conteúdo abordado em sala de aula e aplicá-lo de maneira prática ao longo do desenvolvimento do projeto, consolidando tanto meu aprendizado quanto minhas habilidades técnicas. </p>
+
+<h3 align = "center">Hard Skills</h3>
+
+<table align="center">
+    <tr>
+      <th width="300px">Tecnologia/Metodologia</th>
+      <th width="300px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Árvore Aleatória de Regressão (Python)</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+    <tr>
+      <td>Framework Flask</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+    <tr>
+      <td>Criação de Endpoint (Framework Django)</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+    <tr>
+      <td>Pré processamento de dados para utilização em IA</td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+</table>
+
+<h3 align = "center">Soft Skills</h3>
+
+<table align="center">
+    <tr>
+      <th width="300px">Habilidade</th>
+      <th width="300px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Aprendizagem Contínua</td>
+      <td>Precisei aprender tecnologias novas para aplicar no projeto</td>
+    </tr>
+    <tr>
+      <td>Organização</td>
+      <td>Precisei organizar como os testes de integração seriam executados, por meio de fluxos</td>
+    </tr>
+    <tr>
+      <td>Inteligência Emocional</td>
+      <td>Precisei controlar as emoções e focar na entrega de resultado</td>
+    </tr>
+    <tr>
+      <td>Comunicação</td>
+      <td>Precisei me comunicar constantemente com os demais membros da equipe para que o fluxo do DevOps continuasse funcional</td>
+    </tr>
+</table>
 
 ## Outros projetos:
 
