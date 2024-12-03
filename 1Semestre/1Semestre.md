@@ -287,7 +287,7 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
     </tr>
     <tr>
       <td>Proatividade</td>
-      <td>Precisei ser proativo para procurar maneiras de aperfeioar minhas entregas</td>
+      <td>Precisei ser proativo para procurar maneiras de aperfeiçoar minhas entregas</td>
     </tr>
 </table>
 
