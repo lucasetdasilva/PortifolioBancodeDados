@@ -283,7 +283,7 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
     </tr>
     <tr>
       <td>Autonomia</td>
-      <td>Precisei ser autônomo para me aprofundar meus conhecimentos e entregar minhas tarefas</td>
+      <td>Precisei ser autônomo para aprofundar meus conhecimentos e entregar minhas tarefas</td>
     </tr>
     <tr>
       <td>Proatividade</td>
