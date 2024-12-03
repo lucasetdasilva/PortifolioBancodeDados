@@ -241,17 +241,56 @@ Essa função visa proporcionar uma experiência mais personalizada e convenient
 <p>Durante o projeto de API, atuei como Scrum Master, auxiliando meus colegas no desenvolvimento de suas atividades, além de atuar como um facilitador, tirando impedimentos que podem atrasar os prazos das atividades. Pude entender e aplicar fundamentos básicos do Scrum que ajudaram a equipe a se comprometer com o projeto e entregar um projeto simples e de qualidade.</p>
 <p>Também atuei como desenvolvedor, elaborando e construindo implementações do projeto. Pude aumentar o meu conhecimento na linguagem Python e utilizá-la para diferentes propósitos. Além de compreender como funciona a lógica de programação, conceitos de repetição, conceitos de condicionais entre outros paradigmas da programação.</p>
 
-### - Hard Skills:
-* Conhecimento e aprofundamento de lógica de programação na linguaguem Python
-* Desenvolvimento de API para obtenção de recursos
-* Compreensão na manipulação de dicionários
-* Desenvolvimento de aplicação que compreende a fala humana e pode se comunicar com o usuário por voz
+<h3 align = "center">Hard Skills</h3>
 
-### - Soft Skills:
-* Empatia
-* Colobaração
-* Autonomia
-* Proatividade
+<table align="center">
+    <tr>
+      <th width="300px">Tecnologia/Metodologia</th>
+      <th width="300px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Python (Lógica de Programação)</td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+    <tr>
+      <td>Desenvolvimento de API para obtenção de recursos</td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+    <tr>
+      <td>Compreensão na manipulação de dicionários</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+    <tr>
+      <td>Reconhecimento de voz</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+</table>
+
+<h3 align = "center">Soft Skills</h3>
+
+<table align="center">
+    <tr>
+      <th width="300px">Habilidade</th>
+      <th width="300px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Empatia</td>
+      <td>Precisei ser empático para compreender as limitações de cada integrante do projeto</td>
+    </tr>
+    <tr>
+      <td>Colobaração</td>
+      <td>Precisei ser colaborativo para ajudar os integrantes do projeto</td>
+    </tr>
+    <tr>
+      <td>Autonomia</td>
+      <td>Precisei ser autônomo para me aprofundar meus conhecimentos e entregar minhas tarefas</td>
+    </tr>
+    <tr>
+      <td>Proatividade</td>
+      <td>Precisei ser proativo para procurar maneiras de aperfeioar minhas entregas</td>
+    </tr>
+</table>
+
 <hr></hr>
 <br>
 
