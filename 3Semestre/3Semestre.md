@@ -155,15 +155,56 @@ public class Produto {
 <p>Como Scrum Master da minha equipe pude entender como deve ser realizado a organização de uma equipe, sempre conversando com os demais membros para entender suas necessidades em relação ao desenvolvimento do projeto, ou seja, tive que observar se as tarefas estavam sendo realizadas como o esperado, se os membros da equipe estavam com impedimentos externos ou internos e como poderia amenizar a situação. Ser Scrum Master mostrou para mim que a comunicação é a chave para se construir confiança uns com os outros, pois o ponto que todos estão em sincronia o projeto e consequentemente o produto final teram uma qualidade superior ao esperado pelo cliente.</p>
 <p>Como desenvolvedor pude aprimorar meus conhecimentos em modelagem de dados, além de estudar e aplicar os conhecimentos que adquiri com o framework SpringBoot, para o desenvolvimento do back-end da aplicação.</p> 
 
-### - Hard Skills:
-* Criação de rota REST (método PUT)
-* Desenvolvimento Back-end utilizando o framework SpringBoot, pertencente a linguagem Java
-* Modelagem de Banco de Dados
+<h3 align = "center">Hard Skills</h3>
 
-### - Soft Skills:
-* Comunicação
-* Organização
-* Inteligência Emocional
+<table align="center">
+    <tr>
+      <th width="300px">Tecnologia/Metodologia</th>
+      <th width="300px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Criação de rota REST (método PUT)</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+    <tr>
+      <td>SpringBoot</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+    <tr>
+      <td>Modelagem de Banco de Dados</td>
+      <td>Sei fazer com Autonomia</td>
+    </tr>
+    <tr>
+      <td>Mapeamento de Tabelas</td>
+      <td>Sei fazer com Ajuda</td>
+    </tr>
+</table>
+
+<h3 align = "center">Soft Skills</h3>
+
+<table align="center">
+    <tr>
+      <th width="300px">Habilidade</th>
+      <th width="300px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Comunicação</td>
+      <td>Precisei me comunicar com os membros do projeto para saber sobre suas tarefas</td>
+    </tr>
+    <tr>
+      <td>Organização</td>
+      <td>Precisei me organizar para entregar minhas tarefas</td>
+    </tr>
+    <tr>
+      <td>Inteligência Emocional</td>
+      <td>Precisei manter minhas emoções sobre controle, para não afetar o meu desempenho</td>
+    </tr>
+    <tr>
+      <td>Adaptabilidade</td>
+      <td>Precisei me adaptar a pequena quantidade de pessoas na equipe</td>
+    </tr>
+</table>
+
 <hr></hr>
 <br>
 
